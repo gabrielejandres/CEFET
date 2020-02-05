@@ -1,0 +1,32 @@
+body{
+	background-color: #E6E6E6;
+}
+*{
+	font-family: verdana;
+}
+@font-face {
+      font-family: "A FOR A";
+      src: url("../fonts/A FOR A.ttf") format("truetype");
+}
+.bebas-font{
+		font-family: "A FOR A";  
+} 
+.cuchillada-font{
+		font-family: 'Pacifico', cursive;
+} 
+.cuchillada-font:hover{
+		color: #fff;
+		text-decoration: none;
+		opacity: 0.5;
+} 
+main {
+	background: url(../imgs/lateral.jpg);
+}
+.divisao{
+	font-family: 'Josefin Sans', sans-serif;
+	text-shadow: 2px 2px 2px gray;
+	font-size: 2em;
+}	
+.nome_mat{
+	font-family: 'Amatic SC', cursive;
+}

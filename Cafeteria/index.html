@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+	<head>
+		<title>GabAna Coffee </title>
+		<meta charset="utf-8"/>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		
+		<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css"/>
+		
+		<link rel="icon" href="./imgs/logo.png" width="50px"  />
+		
+		<link rel="stylesheet" type="text/css" href="./css/cafeteria2.css"/>
+		
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+		
+		<script src="./JS/jquery.min.js"></script>
+		<style>
+			li{
+				list-style:none;	
+			}
+		</style>
+		
+		<script>
+			$(function(){
+				var total = 0;
+				var cardapio = [new produto("Mocha",7.00,1,1)
+								,new produto("Frapuccino",3.00,2,1)
+								,new produto("Expresso",5.00,3,1)
+								,new produto("Chá",9.50,4,1)
+								,new produto("Matte",6.00,5,1)
+								,new produto("Chocolate quente",9.50,6,1)
+								,new produto("Café",6.00,7,1)
+
+				];
+				var maiorI = 0;
+				$.each(cardapio,function(i,prod){
+					if(i>maiorI){
+						maiorI = i;
+					}
+				})
+				var tam = maiorI+1;
+				/*console.log(tam);
+				console.log(cardapio);*/
+				function Produto (id, nome, valor){
+					return {"id": id, "nome": nome, 
+						"valorUnitario": valor};
+				}
+
+			   		function produto(nome,preco,id,quant){
+					this.nome= nome;
+					this.preco = preco;
+					this.id = id;
+					this.quant = quant;
+					
+	
+				};
+				
+				
+				var pedido = [];
+				  function itemPedido(produto){
+					this.nome = produto.nome;
+					this.quantidade = 1;
+					this.id=produto.id;
+					this.preco = produto.preco;
+					
+				};
+
+				  function getItemPedido(prod){
+					var result = null;
+					$.each(pedido,function(i,item){
+						if(item.id == prod.id ){
+							result = item;
+						}
+					});
+					return result;
+				};
+				function substituir(novo){
+					$("#pedidos " +"#"+novo.id+" .quantidade").text(novo.quantidade);
+					$("#pedidos " +"#"+novo.id+" .preco").text(novo.quantidade*novo.preco);
+
+				}
+				function adicionaItemPedido(prod){
+					var itemExistente = getItemPedido(prod);
+					if(itemExistente!= null){
+						$.each(pedido,function(i,item){
+							if(item.id == itemExistente.id){
+								item.quantidade = item.quantidade+1;
+								substituir(item);
+								
+							}
+						});
+						
+					}
+					else{
+						pedido.push(new itemPedido(prod));
+						$("#pedidos").append($("<tr/>")
+								.attr("id",prod.id)
+								.append($("<td/>")
+									.text(prod.nome)
+									.addClass("nome")
+									)
+								.append($("<td/>")
+									.text(prod.quant)
+									.addClass("quantidade")
+									)
+								.append($("<td/>")
+									.text(prod.preco)
+									.addClass("pre")
+									)
+								.append($("<td/>")
+									.text(prod.quant*prod.preco)
+									.addClass("preco")
+
+									)
+								.append($("<img/>")
+									.attr("src","./imgs/lixeira.png")
+									.attr("id",prod.id)
+									.addClass("lixeira")
+									)
+								)
+								
+					
+					}
+					total += (prod.quant*prod.preco);
+					console.log(prod.quant);
+					$("#valorTotal").text(total);
+					
+					/*var valporItem = ($('.preco').text());
+					console.log(valporItem);
+					total += parseInt(valporItem);
+					console.log(total);	*/
+					
+				}
+
+				function pesquisaPorId(vetor, objid){
+					var result;
+					$.each(vetor,function(index,obj){
+
+						if(obj.id == objid){
+							result = obj;
+						}
+					})
+					return result;
+				}
+				function apagar(id){
+					$("#pedidos " +"#"+id).remove();
+					var tot = calculaTotal();
+					excluirdoArray(id);
+					console.log(tot);
+				}
+				function excluirdoArray(id){
+					$.each(pedido, function(i, prod){
+						console.log(prod.id);
+						if(id==prod.id){
+							prod.preco = 0;
+						}
+					});
+				}
+				$.each(cardapio,function(i,prod){
+					$("#cardapio").append($("<tr/>")
+							.append($("<td/>")
+								.text(prod.nome)
+								.attr("id",prod.id)
+								)
+							.append($("<td/>")
+								.text(prod.preco)
+								.attr("id",prod.id)
+								)
+							.append($("<button/>")
+								.addClass("adicionar")
+								.attr("id",prod.id)
+								.text("Adicionar ao pedido")
+								)
+						)
+				})
+				$(".adicionar").click(function(){
+					var id = $(this).attr("id");
+					var obj = pesquisaPorId(cardapio,id);
+					adicionaItemPedido(obj);
+					
+					});
+					
+				function calculaTotal(){
+					var total = 0;
+					$.each(pedido, function(indice, obj){
+						total = total + (obj.preco * obj.quantidade);
+						console.log(total);
+					});
+					$("#valorTotal").text(total);
+				}
+				
+				$("#pedidos").on("click","img",function(){
+					var id = $(this) .attr("id");
+					apagar(id);
+					calculaTotal();
+				});
+				$(".botao").click(function(){
+				
+					var nome = $("#nome").val();
+					var preco = $("#preco").val();
+					
+					cardapio.push(new Produto((tam+1),nome,preco));
+					
+					var $tdNome= $("<td/>").addClass("nome");
+					$tdNome.text(nome);
+					
+					var $tdPreco= $("<td/>").addClass("preco");
+					$tdPreco.text(preco);
+					
+					var $tdAdicionar= $("<button onclick=alert('Aguarde')/>")
+								.addClass("adicionarnovo")
+								.attr("id",tam+1)
+								.text("Adicionar ao pedido");
+					
+					var $trLinha = $("<tr/>");
+					
+					$trLinha
+						.append($tdNome)
+						.append($tdPreco)
+						.append($tdAdicionar);
+					
+					$("#cardapio").append($trLinha);
+						
+					console.log(cardapio);
+			
+				});
+				$(".btn").click(function(){
+					alert("Obrigada pela compra!");
+				})
+					
+				});
+				
+		</script>
+	</head>
+	<body>
+	<header class="header">
+			<div class="menu">
+				<nav>
+					<ul>
+						<li><a href="inicio.html" >Início</a></li>
+						<li class="segundo"><a href="index.html">Cardápio & Pedido </a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="clearfix"></div>
+		<div class="header-logo">
+				<img class="logo" src="./imgs/logo.png" alt="logo">
+			</div>
+			<div class="clearfix"></div>
+	</header>
+	<div class="card">
+		<h1> Cardápio </h1>
+		<table id="cardapio">
+			<tr>
+				<th>Nome</th>
+				<th>Preço</th>
+			</tr>
+		</table>
+		
+	</div>
+		<div class="add">
+		<h1>Novo Item de Cardápio</h1>
+			<div data-scroll-reveal="enter top" class="form">
+					<label for="nome">Nome do produto:</label>
+					<input type="text" id="nome"/><br/><br/>	
+					
+					<label for="nome">Preço unitário:</label>
+					<input type="number" id="preco"/><br/><br/>
+					
+					<input type="submit" name="submit" value="Adicionar" class="botao"/>
+			</div>
+		</div>
+		<div class="pedido">
+		<h1>Meu Pedido</h1>
+		<table data-scroll-reveal="enter top" id="pedidos">
+			<tr>
+				<th>Nome</th>
+				<th>Quantidade</th>
+				<th>Preço unitário</th>
+				<th>Valor por item</th>
+			</tr>
+			<tfoot>
+					<tr> 
+						<th colspan="3"> Total</th>
+						<td id="valorTotal"></td>
+					</tr>
+				</tfoot>
+		</table>
+		<div class="total"></div>
+		<button class="btn">Finalizar pedido</button>
+		</div>
+		<footer class="footer2">
+			<div class="autoria">
+				<p> © Created by Ana Clara Faria e Gabriele Jandres</p>
+			</div>
+				<div class="navbar-collapse collapse social">
+				<ul class="nav navbar-nav">
+							<li id="social" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2836">
+								<a target="_blank" href="http://facebook.com"><i class="fa fa-facebook"></i><span class="fontawesome-text"> </span></a>
+							</li>
+							<li id="social" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2837">
+								<a target="_blank" href="http://twitter.com"><i class="fa fa-twitter"></i><span class="fontawesome-text">  </span></a>
+							</li>
+							<li id="social" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2838">
+								<a target="_blank" href="http://instagram.com"><i class="fa fa-instagram"></i><span class="fontawesome-text">  </span></a>
+							</li>
+				</ul>
+			</div>
+		</footer>
+
+	</body>
+</html>

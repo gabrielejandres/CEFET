@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Projeto Enem </title>
+		<meta charset="utf-8"/>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/estado.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/modulo.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/temas2.css"/>
+		
+		<script src="../JS/jquery.min.js"></script>
+		<script src="../plugin/correcao.js"></script> 
+		
+		<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css"/>
+		
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+		
+		<link rel="icon" href="../imgs/icon.png" width="50px" />
+		<script>
+			$(document).ready(function(){	
+				$(".questoes").testaResposta();
+				$(".divisao").limpar();
+			});	
+		</script>
+		
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-logo">
+				<img class="logo_header"src="../imgs/logomaybe2.png" alt="logo">
+			</div>
+			<div class="header-buttons">
+				<ul>
+					<li><a href="../login.html" class="botao cuchillada-font ">Entrar</a></li>
+					<li><a href="../cadastrar.html" class="botao cuchillada-font ">Cadastrar</a></li>
+				</ul>
+			</div>
+			<div class="header_search">
+				<form class="searchbox" method="get" action="/search" autocomplete="off" class="header-search">
+					<input name="q" type="text" size="15" placeholder="Digite o que procura" />
+					<input class="button-submit" type="submit" value=" "/>
+				</form>	
+			</div>
+			<div class="dropdown">
+				<span class="cuchillada-font botaomenu">Menu</span>
+					<div class="dropdown-content">
+						<a class="cuchillada-font" href="../inicio.html">Início</a>
+						<a class="cuchillada-font" href="../informacoes.html">Informações</a>
+						<a class="cuchillada-font" href="../simulados.html">Simulados</a>
+						<a class="cuchillada-font" href="../testes.html">Testes vocacionais</a>
+					</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="menu">
+				<nav class="bebas-font">
+					<ul>
+						<li><a href="../inicio.html" class="cuchillada-font options">Início</a></li>
+						<li><a href="../informacoes.html" class="cuchillada-font options">Informações</a></li>
+						<li><a href="../simulados.html" class="cuchillada-font options">Simulados</a></li>
+						<li><a href="../testes.html" class="cuchillada-font options">Testes vocacionais</a></li>	
+					</ul>
+				</nav>
+			</div>
+			<div class="clearfix"></div>
+		</header>
+		<main>	
+			<div class="centralizar conteudo">
+				<section class="questoes">
+					<h3 class="title_info nome_mat central">Física</h3>
+					<h4 class="divisao">Questão 1</h4>
+					<p class="titlesm">Os carrinhos de brinquedo podem ser de vários tipos.
+						Dentre eles, há os movidos a corda, em que uma mola em seu interior é comprimida quando a
+						criança puxa o carrinho para trás. Ao ser solto, o carrinho entra em movimento enquanto a mola
+						volta à sua forma inicial.<br/>
+						O processo de conversão de energia que ocorre no carrinho descrito também é verificado em
+					</p> 
+
+					<div class="alternativas">
+						<p class="errada">a) um dínamo. </p>
+
+
+						<p class="errada">b) um freio de automóvel. </p>
+
+
+						<p class="errada">c) um motor a combustão.</p>
+
+
+						<p class="errada">d) uma usina hidroelétrica. </p>
+
+
+						<p class="certa">e) uma atiradeira (estilingue).   </p> 
+					</div>
+					<h4 class="divisao">Questão 2</h4>
+					<p class="titlesm">Nos dias frios, é comum ouvir expressões como: “Esta roupa é quentinha” ou então “Feche a janela
+						para o frio não entrar”. As expressões do senso comum utilizadas estão em desacordo com o
+						conceito de calor da termodinâmica. A roupa não é “quentinha”, muito menos o frio “entra” pela
+						janela.<br/>
+						A utilização das expressões “roupa é quentinha” e “para o frio não entrar” é inadequada, pois o(a)
+					</p> 
+
+					<div class="alternativas">
+						<p class="errada">a) roupa absorve a temperatura do corpo da pessoa, e o frio não entra pela janela, o calor é que sai
+por ela. </p>
+
+
+						<p class="errada">b) roupa não fornece calor por ser um isolante térmico, e o frio não entra pela janela, pois é a
+temperatura da sala que sai por ela. </p>
+
+
+						<p class="errada">c) roupa não é uma fonte de temperatura, e o frio não pode entrar pela janela, pois o calor está
+contido na sala, logo o calor é que sai por ela.</p>
+
+
+						<p class="certa">d) calor não está contido num corpo, sendo uma forma de energia em trânsito de um corpo de
+maior temperatura para outro de menor temperatura. </p>
+
+
+						<p class="errada">e) calor está contido no corpo da pessoa, e não na roupa, sendo uma forma de temperatura em
+trânsito de um corpo mais quente para um corpo mais frio.</p> 
+					</div>
+					<h4 class="divisao">Questão 3</h4>
+					<p class="titlesm">Será que uma miragem ajudou a afundar o Titanic? O fenômeno ótico conhecido como Fata
+						Morgana pode fazer com que uma falsa parede de água apareça sobre o horizonte molhado.
+						Quando as condições são favoráveis, a luz refletida pela água fria pode ser desviada por uma
+						camada incomum de ar quente acima, chegando até o observador, vinda de muitos ângulos
+						diferentes. De acordo com estudos de pesquisadores da Universidade de San Diego, uma Fata
+						Morgana pode ter obscurecido os icebergs da visão da tripulação que estava a bordo do Titanic.
+						Dessa forma, a certa distância, o horizonte verdadeiro fica encoberto por uma névoa escurecida,
+						que se parece muito com águas calmas no escuro.<br/>
+						Disponível em: http://apod.nasa.gov. Acesso em: 6 set. 2012 (adaptado)<br/>
+						O fenômeno ótico que, segundo os pesquisadores, provoca a Fata Morgana é a
+					</p> 
+
+					<div class="alternativas">
+						<p class="errada">a) ressonância.</p>
+
+
+						<p class="certa">b) refração. </p>
+
+
+						<p class="errada">c) difração.</p>
+
+
+						<p class="errada">d) reflexão.</p>
+
+
+						<p class="errada">e) difusão.</p> 
+					</div>
+					<h4 class="divisao">Questão 4</h4>
+					<p class="titlesm">Uma lâmpada LED (diodo emissor de luz), que funciona com 12 V e corrente contínua de 0,45 A,
+						produz a mesma quantidade de luz que uma lâmpada incandescente de 60 W de potência.<br/>
+						Qual é o valor da redução da potência consumida ao se substituir a lâmpada incandescente pela de
+						LED?
+					</p> 
+
+					<div class="alternativas">
+						<p class="certa">a) 54,6 W</p>
+
+
+						<p class="errada">b) 27,0 W </p>
+
+
+						<p class="errada">c) 26,6 W</p>
+
+
+						<p class="errada">d) 5,4 W  </p>
+
+
+						<p class="errada">e) 5,0 W </p> 
+					</div>
+					<h4 class="divisao">Questão 5</h4>
+					<p class="titlesm">O chuveiro elétrico é um dispositivo capaz de transformar energia elétrica em energia térmica, o
+						que possibilita a elevação da temperatura da água. Um chuveiro projetado para funcionar em 110 V
+						pode ser adaptado para funcionar em 220 V, de modo a manter inalterada sua potência.<br/>
+						Uma das maneiras de fazer essa adaptação é trocar a resistência do chuveiro por outra, de mesmo
+						material e com o(a) 
+
+					</p> 
+
+					<div class="alternativas">
+						<p class="errada">a) dobro do comprimento do fio. </p>
+
+
+						<p class="errada">b) metade do comprimento do fio. </p>
+
+
+						<p class="errada">c) metade da área da seção reta do fio. </p>
+
+
+						<p class="errada">d) quádruplo da área da seção reta do fio.  </p>
+
+
+						<p class="certa">e) quarta parte da área da seção reta do fio.  </p> 
+					</div>
+					<br/><br/>
+					<button class="limpar">Limpar</button>
+				</section>
+				
+			</div>
+		</main>
+		<footer class="rodape">
+			<div class="autoria">
+				<h4><em class="cuchillada-font white"> © Created by Ana Clara Faria e Gabriele Jandres</em></h4>
+			</div>
+				<div class="rede-social">
+					<a href="http://facebook.com/juntosprojetoenem"><img class="redes" src="../imgs/face.png" alt="IMG"></a>
+					<a href="http://twitter.com/ProjetoEnem"><img class="redes" src="../imgs/tt.png" alt="IMG"></a>
+					<a href="http://instagram.com/ProjetoEnem"><img class="redes" src="../imgs/insta.png" alt="IMG"></a>
+				</div>
+		</footer>
+	</body>
+</html>

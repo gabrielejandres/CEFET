@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			body {
+				background: url(./img/background3.jpeg) no-repeat;
+				background-size: 100% 100%;
+				height: 600px;
+				position: relative;
+			}
+			#ringue {
+				position: absolute;
+				bottom: 40px;
+			}
+			.magia {
+				position: absolute;
+				top: 40px;
+				left: 200px;
+				height: 67px; 
+			}
+			.deslocada {
+			}
+			.voadora{
+				width: 365px;
+			}
+			.soco, .chute{
+				width: 365px;
+			}
+			
+		</style>
+		<script src="./JS/jquery.min.js"></script>
+		<script>
+			$(function(){
+				var comando1, comando2, comando3 = null;
+				$("#player").hover(function(){
+					$(this).attr("src", "./img/ryu-ginga.gif");
+				});
+				$("#player").mouseleave(function(){
+					$(this).attr("src", "./img/ryu.png");
+				});
+				$("#player").click(function(){
+					/*$(this).attr("src",".img/ryu-magia.png");
+					$("#ringue")
+						.append ($("<img/>")
+							.attr("src",".img/bola-fogo.gif")
+								.addClass("magia")
+						);
+					*/
+				});
+
+				$("#ringue").on("mouseenter", ".magia", function(){
+					$(this).addClass("deslocada");
+				})
+				$('body').keyup(function(e){
+                    /* 
+                     * verifica se o evento Ã© Keycode (para IE e outros browsers)
+                     * se nÃ£o for pega o evento Which (Firefox)
+                    */
+                   var tecla = (e.keyCode?e.keyCode:e.which);
+				   
+                   if(comando1==null || comando1==116) {
+						comando1 = tecla;
+                   } else if(comando2 == null) {
+                   		comando2 = tecla;
+                   } else if(comando3 == null) {
+                   		comando3 = tecla;
+                   }
+				   console.log("comando 1"+comando1);
+				   console.log("comando 2"+comando2);
+				   console.log("comando 3"+comando3);
+							
+                   if(comando1&&comando2&&comando3) {
+				   
+                   		if(comando1==83 && comando2==68 && comando3 == 13) {
+							
+                   			executaMagia(); // s d enter
+
+                   		}
+                   		if(comando1==40 && comando2==37 && comando3 == 13) {
+                   			executaVoadora(); // baixo volta enter
+
+                   		}
+						if(comando1==71 && comando2==65 && comando3 == 13) {
+                   			executaSoco(); // g a enter
+
+                   		}
+						if(comando1==83 && comando2==65 && comando3 == 13) {
+                   			executaChute(); // s a enter
+
+                   		}
+                   		comando1 = null;
+                   		comando2 = null;
+                   		comando3 = null;
+                   }
+                   console.log(tecla);
+
+                });
+				function executaMagia() {
+				//alert("Hadouken!!!");
+				$("#player").attr("src", "./img/ryu-magia.png");
+					$("#ringue")
+						.append($("<audio />")
+							.addClass("som-magia")
+							.attr("autoplay", "autoplay")
+							.append($("<source />")
+								.attr("src", "./sound/hadouken.mp3")
+							))
+						.append($("<img />")
+							.attr("src", "./img/bola-fogo.gif")
+							.addClass("magia")
+							.animate({
+								"margin-left": "+=1100px"
+							}, 5000, function(){
+								$(this).remove();
+								$("#player").attr("src", "./img/ryu-ginga.gif");
+								$(".som-magia").remove();
+							})
+						);
+
+			}
+			function executaVoadora() {
+				//alert("Voadora!!!");
+				$("#player").attr("src", "./img/ryu-tatsumaki-senpuukyaku.gif")
+					.addClass("voadora");
+					$("#ringue")
+						.append($("<audio />")
+							.addClass("som-magia")
+							.attr("autoplay", "autoplay")
+							.append($("<source />")
+								.attr("src", "./sound/hadouken.mp3")
+							));
+							 setTimeout(voltarPlayer,2000);
+			}
+			function voltarPlayer(){
+				$("#player").attr("src","./img/ryu.png")
+			}
+			
+			function executaSoco() {
+				//alert("Soco!!!");
+				$("#player").attr("src", "./img/ryu-mk.gif")
+					.addClass("soco");
+					$("#ringue")
+						.append($("<audio />")
+							.addClass("som-magia")
+							.attr("autoplay", "autoplay")
+							.append($("<source />")
+								.attr("src", "./sound/ryu-shoryuken.mp3")
+							))
+							 setTimeout(voltarPlayer,2000);
+			}
+			
+			function executaChute() {
+				//alert("Chute!!!");
+				$("#player").attr("src", "./img/ryu-shoryuken.gif")
+					.addClass("chute");
+					$("#ringue")
+						.append($("<audio />")
+							.addClass("som-magia")
+							.attr("autoplay", "autoplay")
+							.append($("<source />")
+								.attr("src", "./sound/ryu-tatsumaki.mp3")
+							))
+							 setTimeout(voltarPlayer,2000);
+			}
+			
+			});
+			
+			
+		</script>
+	</head>
+	<body>
+		<audio autoplay="autoplay">
+			<source src="./sound/ryu-musica-fase.mp3"/>
+		</audio>
+		<div id="ringue">
+			<img src="./img/ryu.png" id="player"/>
+		</div>
+	</body>
+</html>

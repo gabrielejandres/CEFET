@@ -1,0 +1,288 @@
+.menu nav li {
+		display: inline;
+		margin: 10px;
+		padding: 0 50px;
+		}
+.menu {
+		text-align: center;		
+		font-size: 25px;
+}
+.header-logo {
+	position: relative;
+	width: inherit;
+	margin-left: 250px;
+}
+.header-buttons{
+	position: absolute;
+	right: 0;
+	top: 3%;
+}
+.header-buttons li {
+	list-style:none;
+	float:left;
+}
+.header-search{
+	position: absolute;
+	right: 0;
+	margin-top: 180px;
+}
+.header_search{
+	position: absolute;
+	right:0;
+	margin-top: -60px;
+}
+.botao {
+		padding: 10px;
+		text-decoration: none;
+		border-radius: 5px;
+		box-sizing: border-box;
+		float: right;
+		margin: 10px;
+}	
+.searchbox {
+	width: 280px;
+	background: url(http://i.imgur.com/xKn6CB6.png) no-repeat;
+	margin-left: 650px;
+	margin-bottom: 10px;
+}
+.searchbox input {
+    outline: none;
+}
+.searchbox input[type="text"] {
+	background: transparent;
+	border: 0px;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	font-size: 14px;
+    padding: 10px 35px 10px 20px;
+    width: 220px;
+}
+.button-submit{
+	border-width: 0px;
+	width: 40px;
+	height: 50px;
+	position: absolute;
+}
+.titles{
+	font-size: 30px;
+	margin-left: 35px;
+	margin-top: 35px;
+}
+.retangulo{
+	width: 720px;
+	height: 200px;
+	border-radius: 10px;
+	text-align: justify;
+	margin-left: 30px;
+}
+.quadrado{
+	width: 350px;
+	padding: 15px;
+	border-radius: 10px;
+	text-align: justify;
+	margin-left: 30px;
+}
+.notice-text{
+	margin-top: 15px;
+}
+.title_dp{
+	font-size: 20px;
+	margin-left: 35px;
+	margin-top: 35px;
+}
+.user{
+	float: right;
+	margin-top: 8px;
+	font-size: 18px;
+}
+.quadrado_dps{
+	width: 350px;
+	height: 150px;
+	padding: 15px;
+	border-radius: 10px;
+	text-align: justify;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+.redes{ 
+	float: right;
+	width: 30px;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+.autoria{
+	float: left;
+	text-align: center;
+	margin-left: 35%;
+}
+.title_info{
+	padding: 20px;
+}
+.subtitle{
+	padding: 10px;
+	font-size: 15px;
+	text-align: justify;
+}
+.about{
+	text-align: justify;
+	padding: 10px;
+}
+.pag_oficial{
+	text-align:center;
+}
+.titles_university{
+	font-size: 30px;
+	margin-left: 35px;
+	margin-top:0;
+}
+.notice-text a:hover{
+		color: 	#FF1493;
+		text-decoration: none;
+}
+.titlesm a{
+	top: 1%;
+	text-decoration: none;
+	font-family: 'Pacifico', cursive;
+	font-size: 2em;
+}
+.titlesm a:hover{
+	text-decoration: none;
+	color: grey;
+	font-size: 2.5em;
+}
+.titlesm{
+	text-align: center;
+}
+.divisao{
+	text-align: center;
+	margin-top: 2%;
+}
+.alternativas{
+	margin-left: 20px;
+}
+.questoes{
+	width: 800px;
+	height: 1800px;
+}
+.questoes_ingles{
+	width: 800px;
+	height: 2200px;
+}
+.questoes_espanhol{
+	width: 800px;
+	height: 2350px;
+}
+.questoes_port{
+	width: 800px;
+	height: 2430px;
+}
+.questoes_bio, .questoes_hist{
+	width: 800px;
+	height: 1950px;
+}
+.limpar{
+	border-radius:25px;
+	width: 100px;
+	padding: 8px;
+	margin-left: 350px;
+	background:#A8A8A8;
+	color:rgba(255,255,255,0.8);
+	border:rgba(255,255,255,0.8) solid 1.5px;
+	text-decoration: none;
+	font-family: 'Pacifico', cursive;
+}
+@media (min-width: 641px){
+	.dropdown{
+	display: none;
+	}
+}
+@media (max-width: 640px){
+	.searchbox{
+		display:none;
+	}
+	.redes{ 
+		float: right;
+		width: 20px;
+		margin-top: 0px;
+	}
+	.rodape .autoria{
+		float: left;
+		margin-left: 0;
+		height:25px;
+		position: relative;
+	}
+	.footer-social{
+		position: absolute;
+		margin-top: 25px;
+		margin-left: 50%;
+	}
+	.header-logo {
+		margin-left: 0px;
+	}
+	.footer-social{
+		position: absolute;
+		margin-top: 20px !important;
+		margin-left: 210px !important;
+	}
+	 .logo_header{
+		margin-top: 50px;
+		width: 250px !important;
+		margin-left: 20px !important;
+		margin-bottom: 20px !important;	
+    }	
+	.botao {
+		padding: 7px !important;
+		text-decoration: none;
+		font-size: 10px !important;
+	}
+	.botaomenu{
+		cursor: pointer;
+		color: #fff;
+	}
+	.dropdown {
+		height:20px;
+		background-color:#A8A8A8;
+		color: #000;
+		padding: 0px;
+		text-align:center;
+		position: relative;
+	}
+	.dropdown-content {
+		border-radius: 10%;
+		display: none;
+		height: inherit;
+		position: absolute;
+		z-index: 1;
+	}
+	.dropdown-content a {
+		height: 20px;
+		background-color: #A8A8A8;
+		margin-left: 110px;
+		text-decoration: none;
+		display: block;
+	}
+	.dropdown-content a:hover {
+		background-color: #FF1493;
+		color: #fff;
+		text-decoration: none;
+	}
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+	.dropdown:hover .botaomenu {
+		color: #FF1493;
+	}
+	.rodape{
+		text-align: center;
+	}
+	.gluck{
+		margin-left: 70px;
+	}
+	.rede-social{
+		padding-top: 10px;
+		padding-bottom: -5px;
+	}
+	.limpar{
+		margin-left:120px;
+		margin-top: 10px;
+	}
+}

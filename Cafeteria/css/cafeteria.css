@@ -1,0 +1,120 @@
+*{
+	color: #fff;
+}a:hover {
+	text-decoration: none; 
+	color: white;
+	font-size: 110%;
+	}
+li:hover{
+	background-color: #8B4513;
+}
+a:active{
+	color: 	#8B4513;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+.menu nav li {
+		display: inline;
+		margin: 10px;
+		padding: 0 50px;
+		}
+.menu nav li:nth-child(2){
+		margin-right: -35px;
+		margin-left: 200px;
+}
+.menu {
+		text-align: center;		
+		font-size: 25px;
+		background-color: rgba(0,0,0,0.2);
+		background-attachment: fixed;
+		background-size: 100% 100%;
+		position: fixed;
+		width: 100%;
+}
+.header{
+	padding-top: 20px;
+	width: 100%;
+	height: 1000px;
+	position: absolute;
+	background-image: url('../imgs/fundo.jpg');
+	background-repeat:	no-repeat;
+	background-attachment: fixed;
+    background-size: 100% 100%;
+	font-family: 'Shadows Into Light', cursive;
+}
+.logo {
+	position: relative;
+	width: 200px;
+	margin-left: 570px;
+	margin-top: 2px;
+	margin-bottom: 500px;
+}
+.info{
+	width: 800px;
+	height: 300px;
+	margin-top: -700px;
+	margin-left: 250px;
+	opacity: 0.8;
+}
+.info2{
+	width: 300px;
+	height: 300px;
+	margin-top: -600px;
+	margin-left: 250px;
+}
+.principal{
+	background-color: #8B4513;
+	height: 680px;
+	padding-top: -30px;
+}
+#result{
+	font-family: 'Indie Flower', cursive;
+	color: white;
+	font-size: 8em;
+	margin-left: 70px;
+	text-shadow: 2px 5px 10px black;
+	padding: 50px 0 50px 0;
+}
+.car{
+	width: 600px;
+	margin-top: 350px;
+	margin: 0 auto;
+}
+
+.navbar-inverse .navbar-nav li > a {
+	color: #8B4513;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 17px;
+}
+
+#social{
+	float: left;
+}
+.navbar-inverse .navbar-nav li > a:hover {
+	color: 	#8B4513;
+}
+
+#navbar{
+	margin-left: 20em;
+}
+.autoria p:hover{
+	color: 	#8B4513;
+}
+
+.autoria{
+	margin-top: 15px;
+	margin-left: 550px;
+	float: left;
+}
+.footer{
+		background-color: rgba(0,0,0,0.2);
+		margin-top: -50px;
+}
+
+
+
+

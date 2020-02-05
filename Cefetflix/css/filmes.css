@@ -1,0 +1,190 @@
+*{
+	color: #fff;
+}a:hover {
+	text-decoration: none; 
+	color: white;
+	font-size: 110%;
+	}
+li:hover{
+	background-color: #B40404;
+}
+a:active{
+	color: #B40404;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+.menu nav li {
+		display: inline;
+		margin: 10px;
+		padding: 0 50px;
+		}
+.menu {
+		text-align: center;		
+		font-size: 25px;
+		background-color: #000;
+}
+.header{
+	width: 100%;
+	height: 340px;
+	position: absolute;
+	background: #B40404;
+	font-family: 'Shadows Into Light', cursive;
+
+}
+.logo {
+	position: relative;
+	width: 600px;
+	margin-left: 350px;
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+.filme{
+	background-color: #2E2E2E;
+	height: 930px;
+}
+.filme:nth-child(1){
+	margin-top: -10px;
+}
+.filmes:nth-child(14) img{
+	margin-left: 0px;
+}
+h1{
+	color: #fff;
+	font-family: 'Josefin Sans', sans-serif;
+	margin-left: 300px;
+}
+.dir img{
+	width: 330px;
+	height: 210px;
+	margin-left: 250px;
+}
+.dir img:hover{
+	transform: scale(1.2);
+}
+.dir{
+	float: left;
+	width: 550px;
+}
+.resumo{
+	clear: both;
+	width: 330px;
+	padding-top: 10px;
+	margin-left: 250px;
+	text-align: center;
+}
+.genero, .classificacao, .elenco{
+	float: left;
+	margin-left: 230px;
+	margin-top: 40px;
+	padding: 0px;
+}
+.semelhantes{
+	clear: both;
+}
+.semelhantes img{
+	width: 300px;
+	height: 200px;
+	padding: 30px;
+}
+.um img:nth-child(1){
+	margin-left: 530px;
+}
+.dois img:nth-child(1){
+	margin-left: 360px;
+}
+.tres img:nth-child(1){
+	margin-left: 230px;
+}
+.semelhantes img:hover{
+	transform: scale(1.3);
+}
+.lista{
+	list-style: none;
+	text-align: center;
+}
+.lista:hover{
+	transform: scale(1.3);
+	color: #B40404;
+	background-color: #2E2E2E;
+}
+.title{
+	color: #B40404;
+	text-align: center;
+	font-size: 2em;
+}
+.opinioes:not(.star){
+	text-align: center;
+	float: left;
+	padding-bottom: 15px;
+}
+.linha{
+	margin-left: 460px;
+}
+.semsem{
+	font-size: 3em;
+	text-align: center;
+}
+.star{
+	width: 200px;
+	margin-left: 570px;
+	float: left;
+	padding: 20px;
+	
+}
+.dois{
+	margin-left: 
+}
+body{
+	background-color: #2E2E2E;
+}
+.principal{
+	background-color: #2E2E2E;
+	height: 650px;
+	padding-top: -30px;
+}
+#result{
+	font-family: 'Indie Flower', cursive;
+	color: white;
+	font-size: 8em;
+	margin-left: 70px;
+	text-shadow: 2px 5px 10px black;
+	padding: 50px 0 50px 0;
+}
+.car{
+	width: 600px;
+	margin-top: 20px;
+	margin: 0 auto;
+}
+
+.navbar-inverse .navbar-nav li > a {
+	color: #FFF;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 17px;
+}
+
+#social{
+	float: left;
+}
+.navbar-inverse .navbar-nav li > a:hover {
+	color: #696969;
+}
+
+#navbar{
+	margin-left: 20em;
+}
+.autoria p:hover{
+	color: #696969;
+}
+
+.autoria{
+	margin-top: 15px;
+	margin-left: 550px;
+	float: left;
+}
+
+
+

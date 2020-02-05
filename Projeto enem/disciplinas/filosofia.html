@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Projeto Enem </title>
+		<meta charset="utf-8"/>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/estado.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/modulo.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/temas2.css"/>
+		
+		<script src="../JS/jquery.min.js"></script>
+		<script src="../plugin/correcao.js"></script> 
+		
+		<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css"/>
+		
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+		
+		<link rel="icon" href="../imgs/icon.png" width="50px" />
+		<script>
+			$(document).ready(function(){	
+				$(".questoes").testaResposta();
+				$(".divisao").limpar();
+			});	
+		</script>
+		
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-logo">
+				<img class="logo_header"src="../imgs/logomaybe2.png" alt="logo">
+			</div>
+			<div class="header-buttons">
+				<ul>
+					<li><a href="../login.html" class="botao cuchillada-font ">Entrar</a></li>
+					<li><a href="../cadastrar.html" class="botao cuchillada-font ">Cadastrar</a></li>
+				</ul>
+			</div>
+			<div class="header_search">
+				<form class="searchbox" method="get" action="/search" autocomplete="off" class="header-search">
+					<input name="q" type="text" size="15" placeholder="Digite o que procura" />
+					<input class="button-submit" type="submit" value=" "/>
+				</form>	
+			</div>
+			<div class="dropdown">
+				<span class="cuchillada-font botaomenu">Menu</span>
+					<div class="dropdown-content">
+						<a class="cuchillada-font" href="../inicio.html">Início</a>
+						<a class="cuchillada-font" href="../informacoes.html">Informações</a>
+						<a class="cuchillada-font" href="../simulados.html">Simulados</a>
+						<a class="cuchillada-font" href="../testes.html">Testes vocacionais</a>
+					</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="menu">
+				<nav class="bebas-font">
+					<ul>
+						<li><a href="../inicio.html" class="cuchillada-font options">Início</a></li>
+						<li><a href="../informacoes.html" class="cuchillada-font options">Informações</a></li>
+						<li><a href="../simulados.html" class="cuchillada-font options">Simulados</a></li>
+						<li><a href="../testes.html" class="cuchillada-font options">Testes vocacionais</a></li>	
+					</ul>
+				</nav>
+			</div>
+			<div class="clearfix"></div>
+		</header>
+		<main>	
+			<div class="centralizar conteudo">
+				<section class="questoes_ingles">
+					<h3 class="title_info nome_mat central">Filosofia</h3>
+					<h4 class="divisao">Questão 1</h4>
+					<p class="titlesm">Compreende-se assim o alcance de uma reivindicação que surge desde o nascimento da cidade na
+						Grécia antiga: a redação das leis. Ao escrevê-las, não se faz mais que assegurar-lhes permanência e
+						fixidez. As leis tornam-se bem comum, regra geral, suscetível de ser aplicada a todos da mesma
+						maneira.<br/><br/>
+						VERNANT, J . P. As origens do pensamento grego. Rio de Janeiro: Bertrand Brasil, 1992 (adaptado)
+						Para o autor, a reivindicação atendida na Grécia antiga, ainda vigente no mundo contemporâneo,
+						buscava garantir o seguinte princípio: <br/><br/>
+					</p> 
+
+					<div class="alternativas">
+						<p class="certa">a) Isonomia — igualdade de tratamento aos cidadãos. </p>
+
+
+						<p class="errada">b) Transparência — acesso às informações governamentais.  </p>
+
+
+						<p class="errada">c) Tripartição — separação entre os poderes políticos estatais. </p>
+
+
+						<p class="errada">d) Equiparação — igualdade de gênero na participação política. </p>
+
+
+						<p class="errada">e) Elegibilidade — permissão para candidatura aos cargos públicos.  </p> 
+					</div>
+					<h4 class="divisao">Questão 2</h4>
+					<p class="titlesm">Trasímaco estava impaciente porque Sócrates e os seus amigos presumiam que a justiça era algo
+						real e importante. Trasímaco negava isso. Em seu entender, as pessoas acreditavam no certo e no
+						errado apenas por terem sido ensinadas a obedecer às regras da sua sociedade. No entanto, essas
+						regras não passavam de invenções humanas.<br/><br/>
+						RACHELS, J. Problemas da filosofia. Lisboa: Gradiva, 2009.<br/><br/>
+						O sofista Trasímaco, personagem imortalizado no diálogo A República, de Platão, sustentava que a
+						correlação entre justiça e ética é resultado de 
+					</p> 
+
+					<div class="alternativas">
+						<p class="errada">a) determinações biológicas impregnadas na natureza humana. </p>
+
+
+						<p class="errada">b) verdades objetivas com fundamento anterior aos interesses sociais. </p>
+
+
+						<p class="errada">c) mandamentos divinos inquestionáveis legados das tradições antigas. </p>
+
+
+						<p class="certa">d) convenções sociais resultantes de interesses humanos contingentes. </p>
+
+
+						<p class="errada">e) sentimentos experimentados diante de determinadas atitudes humanas. </p> 
+					</div>
+					<h4 class="divisao">Questão 3</h4>
+					<p class="titlesm">Os andróginos tentaram escalar o céu para combater os deuses. No entanto, os deuses em um
+						primeiro momento pensam em matá-los de forma sumária. Depois decidem puni-los da forma mais
+						cruel: dividem-nos em dois. Por exemplo, é como se pegássemos um ovo cozido e, com uma linha,
+						dividíssemos ao meio. Desta forma, até hoje as metades separadas buscam reunir-se. Cada um com
+						saudade de sua metade, tenta juntar-se novamente a ela, abraçando-se, enlaçando-se um ao outro,
+						desejando formar um único ser.<br/><br/>
+						PLATÃO. O banquete. São Paulo: Nova Cultural, 1987.<br/><br/>
+						No trecho da obra O banquete, Platão explicita, por meio de uma alegoria, o
+					</p> 
+
+					<div class="alternativas">
+						<p class="errada">a) bem supremo como fim do homem. </p>
+
+
+						<p class="errada">b) prazer perene como fundamento da felicidade. </p>
+
+
+						<p class="errada">c) ideal inteligível como transcendência desejada. </p>
+
+
+						<p class="certa">d) amor como falta constituinte do ser humano. </p>
+
+
+						<p class="errada">e) autoconhecimento como caminho da verdade. </p> 
+					</div>
+					<h4 class="divisao">Questão 4</h4>
+					<p class="titlesm">O brasileiro tem noção clara dos comportamentos éticos e morais adequados, mas vive sob o
+						espectro da corrupção, revela pesquisa. Se o país fosse resultado dos padrões morais que as
+						pessoas dizem aprovar, pareceria mais com a Escandinávia do que com Bruzundanga (corrompida
+						nação fictícia de Lima Barreto).<br/><br/>
+						FRAGA, P. Ninguém é inocente. Folha de S. Paulo. 4 out. 2009 (adaptado).<br/><br/>
+						O distanciamento entre “reconhecer” e “cumprir” efetivamente o que é moral constitui uma
+						ambiguidade inerente ao humano, porque as normas morais são 
+					</p> 
+
+					<div class="alternativas">
+						<p class="errada">a) decorrentes da vontade divina e, por esse motivo, utópicas.</p>
+
+
+						<p class="errada">b) parâmetros idealizados, cujo cumprimento é destituído de obrigação. </p>
+
+
+						<p class="errada">c) amplas e vão além da capacidade de o indivíduo conseguir cumpri-las integralmente. </p>
+
+
+						<p class="certa">d) criadas pelo homem, que concede a si mesmo a lei à qual deve se submeter. </p>
+
+
+						<p class="errada">e) cumpridas por aqueles que se dedicam inteiramente .</p> 
+					</div>
+					<h4 class="divisao">Questão 5</h4>
+					<p class="titlesm">Um volume imenso de pesquisas tem sido produzido para tentar avaliar os efeitos dos programas de
+						televisão. A maioria desses estudos diz respeito às crianças — o que é bastante compreensível pela
+						quantidade de tempo que elas passam em frente ao aparelho e pelas possíveis implicações desse
+						comportamento para a socialização. Dois dos tópicos mais pesquisados são o impacto da televisão
+						no âmbito do crime e da violência e a natureza das notícias exibidas na televisão.<br/></br>
+						GIDDENS, A. Sociologia. Porto Alegre: Artmed, 2005.<br/><br/>
+						O texto indica que existe uma significativa produção científica sobre os impactos socioculturais da 
+						televisão na vida do ser humano. E as crianças, em particular, são as mais vulneráveis a essas
+						influências, porque 
+					</p> 
+
+					<div class="alternativas">
+						<p class="errada">a) codificam informações transmitidas nos programas infantis por meio da observação. </p>
+
+
+						<p class="errada">b) adquirem conhecimentos variados que incentivam o processo de interação social. </p>
+
+
+						<p class="certa">c) interiorizam padrões de comportamento e papéis sociais com menor visão crítica.</p>
+
+
+						<p class="errada">d) observam formas de convivência social baseadas na tolerância e no respeito. </p>
+
+
+						<p class="errada">e) apreendem modelos de sociedade pautados na observância das leis. </p> 
+					</div>
+					<br/><br/>
+					<button class="limpar">Limpar</button>
+				</section>
+				
+			</div>
+		</main>
+		<footer class="rodape">
+			<div class="autoria">
+				<h4><em class="cuchillada-font white"> © Created by Ana Clara Faria e Gabriele Jandres</em></h4>
+			</div>
+				<div class="rede-social">
+					<a href="http://facebook.com/juntosprojetoenem"><img class="redes" src="../imgs/face.png" alt="IMG"></a>
+					<a href="http://twitter.com/ProjetoEnem"><img class="redes" src="../imgs/tt.png" alt="IMG"></a>
+					<a href="http://instagram.com/ProjetoEnem"><img class="redes" src="../imgs/insta.png" alt="IMG"></a>
+				</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Projeto Enem </title>
+		<meta charset="utf-8"/>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/estado.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/modulo.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/temas2.css"/>
+		
+		<script src="../JS/jquery.min.js"></script>
+		<script src="../plugin/correcao.js"></script> 
+		
+		<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css"/>
+		
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+		
+		<link rel="icon" href="../imgs/icon.png" width="50px" />
+		<script>
+			$(document).ready(function(){	
+				$(".questoes").testaResposta();
+				$(".divisao").limpar();
+			});	
+		</script>
+		
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-logo">
+				<img class="logo_header"src="../imgs/logomaybe2.png" alt="logo">
+			</div>
+			<div class="header-buttons">
+				<ul>
+					<li><a href="../login.html" class="botao cuchillada-font ">Entrar</a></li>
+					<li><a href="../cadastrar.html" class="botao cuchillada-font ">Cadastrar</a></li>
+				</ul>
+			</div>
+			<div class="header_search">
+				<form class="searchbox" method="get" action="/search" autocomplete="off" class="header-search">
+					<input name="q" type="text" size="15" placeholder="Digite o que procura" />
+					<input class="button-submit" type="submit" value=" "/>
+				</form>	
+			</div>
+			<div class="dropdown">
+				<span class="cuchillada-font botaomenu">Menu</span>
+					<div class="dropdown-content">
+						<a class="cuchillada-font" href="../inicio.html">Início</a>
+						<a class="cuchillada-font" href="../informacoes.html">Informações</a>
+						<a class="cuchillada-font" href="../simulados.html">Simulados</a>
+						<a class="cuchillada-font" href="../testes.html">Testes vocacionais</a>
+					</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="menu">
+				<nav class="bebas-font">
+					<ul>
+						<li><a href="../inicio.html" class="cuchillada-font options">Início</a></li>
+						<li><a href="../informacoes.html" class="cuchillada-font options">Informações</a></li>
+						<li><a href="../simulados.html" class="cuchillada-font options">Simulados</a></li>
+						<li><a href="../testes.html" class="cuchillada-font options">Testes vocacionais</a></li>	
+					</ul>
+				</nav>
+			</div>
+			<div class="clearfix"></div>
+		</header>
+		<main>	
+			<div class="centralizar conteudo">
+				<section class="questoes_espanhol">
+					<h3 class="title_info nome_mat central">Espanhol</h3>
+					<h4 class="divisao">Questão 1</h4>
+					<p class="titlesm">“El verdadero pintor es aquel que es capaz de pintar escenas extraordinarias en medio de un
+						desierto vacío. El verdadero pintor es aquel que es capaz de pintar pacientemente una pera rodeada
+						de los tumultos de la historia”<br/> 
+						DALI, S. La vida secreta de Salvador Dalí, apud DESCHARNES, R. y NERET, G. Salvador Dalí. 1904 –
+						1989. Barcelona: Tashen, 1993.<br/><br/>
+						Al decir eso, Dalí resalta que el verdadero pintor:
+					</p> 
+
+					<div class="alternativas">
+						<p class="errada">a) sabe inventar un mundo no importa donde, pintando sus flores y sus frutos;</p>
+
+
+						<p class="errada">b) necesita vivir en el desierto u ocuparse de los movimientos de la historia; </p>
+
+
+						<p class="errada">c) vive pacientemente en el ambiente que le toca vivir, aunque prefiere pintar la natureza muerta;</p>
+
+
+						<p class="errada">d) se concentra en su arte sin prenderse a lo que le rodea;</p>
+
+
+						<p class="certa">e) no puede alejarse de su historia y del mundo para que su arte sea extraordinaria. </p> 
+					</div>
+					<h4 class="divisao">Questão 2</h4>
+					<p class="titlesm">Excavarán plaza ceremonial del frontis norte de huaca de la Luna Trujillo, feb. 25 (ANDINA). Tras
+						limpiar los escombros del saqueo colonial y de las excavaciones de los últimos años en huaca de la
+						Luna, este año se intervendrá la plaza ceremonial del frontis norte, en donde se ubica la gran
+						fachada del sitio arqueológico ubicado en Trujillo, La Libertad, informaron hoy fuentes culturales.
+						Después de varias semanas de trabajo, el material fue sacado del sitio arqueológico para poder
+						apreciar mejor la extensión y forma del patio que, según las investigaciones, sirvió hace unos 1 500
+						como escenario de extraños rituales. El codirector del Proyecto Arqueológico Huacas del Sol y la
+						Luna, Ricardo Morales Gamarra, sostuvo que con la zona limpia de escombros, los visitantes
+						conocerán la verdadera proporción de la imponente fachada, tal y como la conocieron los moches.
+						Por su parte, el arqueólogo Santiago Uceda, también codirector del proyecto, dijo que las
+						excavaciones se iniciarán este año para determinar qué otros elementos componían dicha área.
+						“Hace poco nos sorprendió encontrar un altar semicircular escalonado. Era algo que no
+						esperábamos. Por lo tanto, es difícil saber qué es lo que aún está escondido en la zona que
+						exploraremos”, señaló Uceda a la Agencia Andina. La huaca de la Luna se localiza en el distrito 
+						trujillano de Moche. Es una pirámide de adobe adornada, en sus murales, con impresionantes
+						imágenes mitológicas, muchas de ellas en alto relieve.<br/>
+						Disponível em: www.andina.com.pe. Acesso em: 23 fev. 2012 (adaptado).<br/><br/>
+						O texto apresenta informações sobre um futuro trabalho de escavação de um sítio arqueológico
+						peruano. Sua leitura permite inferir que:
+					</p> 
+
+					<div class="alternativas">
+						<p class="errada">a) a pirâmide huaca de la Luna foi construída durante o período colonial peruano.</p>
+
+
+						<p class="errada">b) o sítio arqueológico contém um altar semicircular bastante deteriorado.</p>
+
+
+						<p class="errada">c) a pirâmide huaca de la Luna foi construída com cerâmica.</p>
+
+
+						<p class="certa">d) o sítio arqueológico possui um pátio que foi palco de rituais.</p>
+
+
+						<p class="errada">e) o sítio arqueológico mantém escombros deixados pela civilização moche.</p> 
+					</div>
+					<h4 class="divisao">Questão 3</h4>
+					<p class="titlesm">Los fallos de software en aparatos médicos, como marcapasos, van a ser una creciente amenaza
+						para la salud pública, según el informe de Software Freedom Law Center (SFLC) que ha sido
+						presentado hoy en Portland (EEUU), en la Open Source Convention (OSCON).
+						La ponencia “Muerto por el código: transparência de de software en los dispositivos médicos
+						implantables” aborda el riesgo potencialmente mortal de los defectos informáticos en los aparatos
+						médicos implantados en las personas.
+						Según SFLC, millones de personas con condiciones Del corazón, epilepsia, diabetes, obesidad e,
+						incluso, La depresión dependem de implantes, pero el software permanece oculto a los pacientes y
+						sus médicos.
+						La SFLC recuerda graves fallos informáticos ocurridos en otros campos, como en elecciones, en La
+						fabricación, em lãs líneas aéreas comerciales o en los mercados financeiros.<br/>
+						Disponível em: http://www.elpais.com. Acesso em: 24 jul. 2010 (adaptado).<br/><br/>
+						O título da palestra, citado no texto, antecipa o tema que erá tratado e mostra que o autor tem a
+						intenção de:
+					</p> 
+
+					<div class="alternativas">
+						<p class="certa">a) relatar novas experiências em tratamento de saúde.</p>
+
+
+						<p class="errada">b) alertar sobre os riscos mortais de determinados softwares de uso médico para o ser humano.</p>
+
+
+						<p class="errada">c) denunciar falhas médicas na implantação de softwares em seres humanos.</p>
+
+
+						<p class="errada">d) divulgar novos softwares presentes em aparelhos médicos lançados no mercado.</p>
+
+
+						<p class="errada">e) apresentar os defeitos mais comuns de softwares em aparelhos médicos.</p> 
+					</div>
+					<h4 class="divisao">Questão 4</h4>
+					<p class="titlesm"> Nuestra comarca del mundo, que hoy llamamos América Latina perfeccionó sus funciones. Este ya
+						no es el reino de las maravillas donde la realidad derrotaba a la fábula y la imaginación era
+						humillada por los trofeos de la conquista, los yacimientos de oro y las montañas de plata. Pero la
+						región sigue trabajando de sirvienta. Es América Latina, la región de las venas abiertas. Desde el
+						descubrimiento hasta nuestros días, todo se ha trasmutado siempre en capital europeo o, más
+						tarde, norteamericano, y como tal se ha acumulado y se acumula en los lejanos centros del poder.
+						Todo: la tierra, sus frutos y sus profundidades ricas en minerales, los hombres y su capacidad de
+						trabajo y de consumo, los recursos naturales y los recursos humanos. El modo de producción y la
+						estructura de clases de cada lugar han sido sucesivamente determinados, desde fuera, por su
+						incorporación al engranaje universal del capitalismo. Nuestra derrota estuvo siempre implícita en la
+						victoria ajena; nuestra riqueza ha generado siempre nuestra pobreza para alimentar la prosperidad
+						de otros: los imperios y sus caporales nativos.<br/>
+						GALEANO, E. Las venas abiertas de América Latina. Buenos Aires: Siglo Veintiuno Argentina, 2010
+						(adaptado).<br/><br/>
+						A partir da leitura do texto, infere-se que, ao longo da história da América Latina:
+					</p> 
+
+					<div class="alternativas">
+						<p class="certa">a) suas relações com as nações exploradoras sempre se caracterizaram por uma rede de
+dependências.</p>
+
+
+						<p class="errada">b) seus países sempre foram explorados pelas mesmas nações desde o início do processo de
+colonização.</p>
+
+
+						<p class="errada">c) sua sociedade sempre resistiu à aceitação do capitalismo imposto pelo capital estrangeiro.</p>
+
+
+						<p class="errada">d) suas riquezas sempre foram acumuladas longe dos centros de poder.</p>
+
+
+						<p class="errada">e) suas riquezas nunca serviram ao enriquecimento das elites locais.</p> 
+					</div>
+					<h4 class="divisao">Questão 5</h4>
+					<p class="titlesm">Obituario*
+						Lo enterraron en el corazón de un bosque de pinos y sin embargo el ataúd de pino fue importado de
+						Ohio; lo enterraron al borde de una mina de hierro y sin embargo los clavos de su ataúd y el hierro
+						de la pala fueron importados de Pittsburg; lo enterraron junto al mejor pasto de ovejas del mundo y
+						sin embargo las lanas de los festones del ataúd eran de California. Lo enterraron con un traje de
+						New York, un par de zapatos de Boston, una camisa de Cincinatti y unos calcetines de Chicago.
+						Guatemala no facilitó nada al funeral, excepto el cadáver.
+						* Paráfrasis de un famoso texto norteamericano.<br/>
+						NOGUERAS, L. R. Las quince mil vidas del caminante. La Habana: Unea,1977.<br/><br/>
+						O texto de Luis Rogelio Nogueras faz uma crítica:
+					</p> 
+
+					<div class="alternativas">
+						<p class="certa">a) à dependência de produtos estrangeiros por uma nação.</p>
+
+
+						<p class="errada">b) ao comércio desigual entre Guatemala e Estados Unidos.</p>
+
+
+						<p class="errada">c) à má qualidade das mercadorias guatemaltecas.</p>
+
+
+						<p class="errada">d) às dificuldades para a realização de um funeral.</p>
+
+
+						<p class="errada">e) à ausência de recursos naturais na Guatemala.</p> 
+					</div>
+					<button class="limpar">Limpar</button>
+				</section>
+				
+			</div>
+		</main>
+		<footer class="rodape">
+			<div class="autoria">
+				<h4><em class="cuchillada-font white"> © Created by Ana Clara Faria e Gabriele Jandres</em></h4>
+			</div>
+				<div class="rede-social">
+					<a href="http://facebook.com/juntosprojetoenem"><img class="redes" src="../imgs/face.png" alt="IMG"></a>
+					<a href="http://twitter.com/ProjetoEnem"><img class="redes" src="../imgs/tt.png" alt="IMG"></a>
+					<a href="http://instagram.com/ProjetoEnem"><img class="redes" src="../imgs/insta.png" alt="IMG"></a>
+				</div>
+		</footer>
+	</body>
+</html>

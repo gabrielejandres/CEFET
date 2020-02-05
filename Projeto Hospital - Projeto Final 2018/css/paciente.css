@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body{
+	background: url(http://getwallpapers.com/wallpaper/full/b/e/1/301842.jpg) no-repeat;
+	background-size: 100%;
+}
+legend{
+	font-family: 'Amatic SC', cursive;
+	font-size: 280%; 
+	color: white;
+	text-decoration: bold;
+	text-shadow: 3px 5px 4px black;
+}
+.submit{
+	margin: 10px;
+	font-size: 1.2em;
+	background: transparent;
+	border-radius: 10px;
+	padding: 2px;
+	width: 200px;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+}
+
+input{
+	width: 50%;
+	text-align: center;
+	border-radius: 10px;
+	font-family: 'Montserrat', sans-serif;	
+}
+option{
+	text-align: center;
+}
+.agendamento{
+	text-align: center;
+	margin: 5% auto;
+	width: 50%;
+	background-color: rgba(6,6,6,0.4);
+	border-radius: 10px;
+	padding: 50px;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}

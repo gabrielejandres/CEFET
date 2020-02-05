@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<title> Endereço </title>
+		<meta charset="utf-8"/>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css"/>
+		
+		<link rel="icon" href="./img/icon.png" width="50px"  />
+		
+		<link rel="stylesheet" type="text/css" href="./css/endereco.css"/>
+		
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+		
+		<script src="./JS/jquery.min.js"></script> 
+		
+		<script>
+				$(function(){
+						$(".cep").blur(function(){
+							var servico = "http://api.postmon.com.br/v1/cep/";
+							var cep = $(".cep").val();
+							var $xhr = $.get(servico + cep);
+							
+							$xhr.done(function(endereco){
+								console.log(endereco);
+								$(".log").val(endereco.logradouro);
+								$(".num").val(endereco.complemento);
+								$(".bairro").val(endereco.bairro);
+								$(".cidade").val(endereco.cidade);
+								$(".estado").val(endereco.estado);
+							
+							});
+						});
+				});
+		</script>
+	</head>
+	<body>
+	<div>
+			<form action="#" method="post">
+			
+				<label for="nome">Nome</label>
+				<input type="text" name="nome" placeholder="Digite seu nome"/><br/><br/>	
+			
+				<fieldset>
+					<legend class="title">Endereço</legend><br/>
+					<label for="cep">CEP</label>
+					<input type="text" name="cep" class="cep" placeholder="Digite seu CEP"/><br/><br/>
+					
+					<label for="log">Logradouro</label>
+					<input type="text" name="log" class="log"/><br/><br/>	
+					
+					<label for="num">Número</label>
+					<input type="text" name="num" class="num"/><br/><br/>	
+					
+					<label for="bairro">Bairro</label>
+					<input type="text" name="bairro" class="bairro"/><br/><br/>
+					
+					<label for="cidade">Cidade</label>
+					<input type="text" name="cidade" class="cidade"/><br/><br/>	
+					
+					<label for="estado">Estado</label>
+					<input type="text" name="estado" class="estado"/><br/><br/>	
+					
+					<input type="submit" name="submit" value="Salvar" class="btn" />
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>
+		

@@ -1,0 +1,141 @@
+html, body{
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+}
+.menu {
+		height: 40px;
+		width:100%;		
+}
+.rodape {
+		height: 40px;
+		text-align: center;	
+		width:100%;
+		font-size: 20px;
+ }
+.maior{
+	width: 320px;
+	float: right;
+	border-radius: 10px;
+	margin-right: 50px;
+	margin-top: 78px;
+}
+ .centralizar {
+	width: 800px;
+	margin: 0 auto;
+}
+.informations{
+	width: 800px;
+	height: 300px;
+}
+.caixinhas{
+	width: 400px;
+	height: 300px;
+	float: left;
+}
+.notice{
+	float: left;
+	width: 150px;
+	height: 200px;
+	text-align: center;
+	margin: 0 15px;
+}
+.dps{
+	width: 400px;
+	height: 150px;
+	float: left;
+	margin-bottom: 35px;
+}
+.informations_dps{
+	width: 800px;
+	height: 210px;
+}
+
+@media (max-width: 640px){
+	.centralizar{
+		width:326px;
+		margin: 0;
+	}
+	.menu{
+		display:none;
+	}
+	header{
+		width: 326px;
+	}
+    .quadrado_dps{
+    	margin: 0 auto !important;
+		height: 170px !important;
+    }
+	.conteudo:last-child{
+    	margin-top: -130px;
+		height: 380px;
+    }
+    .quadrado{
+    	margin: 0 auto !important;
+		width: 326px !important;
+		margin-left: 0px !important;
+    }
+	.retangulo{
+    	display: table !important;
+    	width: 326px !important;
+    	margin-left: 0px !important;
+    }
+	.informations{
+		width: 326px !important;
+		height: 550px;
+	}
+	.central{
+		margin-left:-80px !important;
+	}
+	.notice{
+		width: 150px;
+		float: left;
+		height: 200px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.dps{
+		width: 326px;
+		height: 150px;
+		margin-bottom: 35px;
+	}
+	.quadrado_dps{
+		margin:0 !important;
+		width: 300px !important;
+	}
+	.informations_dps{
+		width: 326px !important;
+		height: 210px;
+	}
+	.conteudo{
+		width: 326px;
+		height: 550px;
+	}
+	.rodape{
+		height: 55px;
+		text-align: center;	
+		width:302px;
+		font-size: 13px;
+	}
+	.caixinhas{
+		width: 326px;
+		height: 300px;
+	}
+	.caixinhas h3,.caixinhas img{
+		margin-top:20px;
+		margin-left: 50px;
+	}
+	.maior{
+		width: 300px !important;
+		margin-right: 15px !important;
+		margin-top: 50px !important;
+	}
+	.rodape{
+		width: 326px;
+	}
+	.footer-social{
+		position: absolute;
+		margin-top: 20px !important;
+		margin-left: 210px !important;
+	}
+}

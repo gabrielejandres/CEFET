@@ -1,0 +1,269 @@
+body, html{
+	margin: 0 auto;
+	background-color: #E6E6E6;
+	background-size: 100%;
+}
+.cad{
+	position: absolute;
+	right: 5%;
+	margin-top: 2%;
+	border-radius:25px;
+	width: 100px;
+	padding: 5px;
+	background:rgba(0,0,0,0.7);
+	color:rgba(255,255,255,0.8);
+	border:rgba(255,255,255,0.8) solid 1.5px;
+	top: 1%;
+	text-decoration: none;
+	font-family: 'Pacifico', cursive;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+
+}
+
+.log{
+	position: absolute;
+	left:39%;
+	top:20%;
+	background: rgba(255,255,255,0.3);
+	width:340px;
+	height:400px;
+	text-align:center;
+	border-radius:10px;
+}
+.log:hover, .lista:hover, .informations:hover{
+	background: rgba(255,255,255,0.8);
+}
+.menu:hover{
+	background: rgba(255,255,255,0.5);
+}
+.log:hover .box{
+	background-color:rgba(220,220,220,0.8);
+}
+#ent{
+	border-radius:25px;
+	width: 100px;
+	padding: 5px;
+	margin-top: -12px;
+	background:rgba(0,0,0,0.7);
+	color:rgba(255,255,255,0.8);
+	border:rgba(255,255,255,0.8) solid 1.5px;
+	font-family: 'Pacifico', cursive;
+}
+.box{
+	background-color:rgba(255,250,250,0.8);
+	border:none;
+}
+.logo{
+	padding-top: 15px;
+	width: 260px;
+	height: 100px;
+}
+.arq{
+	font-family: 'Josefin Sans', sans-serif;
+	text-shadow: 2px 2px 2px gray;
+}
+.arq:hover{
+	opacity: 0.6;
+}
+.caixa{
+	position: absolute;
+	left: 30%;
+	top:10%;
+	background: rgba(255,255,255,0.3);
+	width:600px;
+	height:540px;
+	text-align:center;
+	border-radius:10px;
+}
+.caixa:hover{
+	background: rgba(255,255,255,0.8);
+}
+.caixa:hover .box{
+	background-color:rgba(220,220,220,0.8);
+}
+form{
+	font-family: 'Dosis', sans-serif;
+}
+.title{
+	font-family: 'Josefin Sans', sans-serif;
+	text-shadow: 2px 2px 2px gray;
+}
+input{
+	border-radius: 10%;
+	padding: 5px;
+}
+.autoria:hover, .autoria_l:hover{
+	transform: scale(1.2);
+}
+footer{
+	margin-top: -45px;
+}
+.autoria, .autoria_l{
+	font-family: 'Josefin Sans', sans-serif;
+	margin-left: 500px;
+	float: left;
+	margin-top: 690px;
+	border-radius: 50px;
+	width: 400px;
+	text-align: center;
+	opacity: 0.6;
+}
+#msg{
+	font-family: 'Josefin Sans', sans-serif;
+	margin-top: 250px;
+	text-align: center;
+	color: #fff;
+	text-shadow: 2px 2px 2px gray;
+}
+.logar{
+	border-radius:25px;
+	width: 100px;
+	padding: 5px;
+	background:rgba(0,0,0,0.7);
+	color:rgba(255,255,255,0.8);
+	border:rgba(255,255,255,0.8) solid 1.5px;
+	font-family: 'Pacifico', cursive;
+	margin-left: 630px;
+}
+.aviso{
+	font-family: 'Pacifico', cursive;
+	font-size: 1.5em;
+	text-shadow: 2px 2px 2px gray;
+}
+@-webkit-keyframes blinker {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+.blinker{
+	margin-top: -50px;
+	text-decoration: blink;
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 2.0s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-direction: alternate;
+}
+.logout{
+	position: absolute;
+	right: 5%;
+	margin-top: 2%;
+	border-radius:25px;
+	width: 100px;
+	padding: 5px;
+	background:rgba(0,0,0,0.7);
+	color:rgba(255,255,255,0.8);
+	border:rgba(255,255,255,0.8) solid 1.5px;
+	top: 1%;
+	text-decoration: none;
+	font-family: 'Pacifico', cursive;
+}
+.perfil{
+	margin-top: 70px;
+	margin-left: 70px;
+	height: 170px;
+	width: 170px;
+	float: left;
+	border-radius: 50%;
+	padding-right: 10px;
+}
+.informations h1, .lista h1{
+	font-family: 'Josefin Sans', sans-serif;
+	color: #fff;
+	text-shadow: 2px 2px 2px #000;
+}
+.information{
+	font-family: 'Josefin Sans', sans-serif;
+	color: #fff;
+			}
+.lista{
+	background-color: rgba(255,255,255,0.4);
+	border-radius: 20px;
+	text-align: center;
+	width: 250px;
+	margin-top: -215px;
+	margin-right: 50px;
+	float: right;
+	color: #fff;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.menu{
+	background-color: rgba(255,255,255,0.1);
+	height: 80px;
+	font-size: 25px;
+}
+.menu .logo{
+	width: 130px;
+	height: 70px;
+	margin-left: 10%;
+	margin-top: -10px;
+	float: left;
+}
+.menu nav li {
+		display: inline;
+		margin: 10px;
+		padding: 0 50px;
+		text-decoration: none;
+		font-family: 'Pacifico', cursive;
+	}
+.menu nav{
+	position: absolute;
+	margin-left: 300px;
+}
+.informations{
+	background-color: rgba(255,255,255,0.4);
+	width: 700px;
+	margin-top: 50px;
+	padding: 10px;
+	border-radius: 10px;
+	margin-left: 300px;
+}
+@media (max-width: 640px){
+	.log{
+		margin-left: -100px;
+	}
+	footer{
+		bottom:0;
+	}
+	.caixa{
+		width: 300px !important;
+		height: 600px;
+		margin-left: -90px;
+		font-size: 10px;
+		margin-top: 20px;
+	}
+	.log{
+		width: 300px !important;
+		margin-left: -115px;
+		margin-top: -20px;
+	}
+	.cad{
+		margin-right: 100px !important;
+		padding: 6px;
+		font-size: 15px;
+		margin-top: 20px;
+	}
+	#ent{
+		padding: 6px;
+		font-size: 15px;
+		margin-top: 10px;
+		width: 110px;
+	}
+	.box{
+		width: 250px;
+		margin-top: 2px;
+	}
+	.autoria{
+		margin-top: 750px;
+		font-size: 10px;
+		margin-left: -35px;
+	}
+	.autoria_l{
+		margin-top: 600px;
+		font-size: 10px;
+		margin-left: -35px;
+	}
+}

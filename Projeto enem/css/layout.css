@@ -1,0 +1,171 @@
+html, body{
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+}
+.menu {
+		height: 40px;
+		width:100%;		
+}
+.rodape {
+		height: 40px;
+		text-align: center;	
+		width:100%;
+		font-size: 20px;
+ }
+ .centralizar {
+	width: 800px;
+	margin: 0 auto;
+}
+.informations{
+	width: 800px;
+	height: 300px;
+}
+.caixinhas{
+	width: 400px;
+	height: 300px;
+	float: left;
+}
+.notice{
+	float: left;
+	width: 150px;
+	height: 200px;
+	text-align: center;
+	margin: 0 15px;
+}
+.dps{
+	width: 400px;
+	height: 150px;
+	float: left;
+	margin-bottom: 35px;
+}
+.informations_dps{
+	width: 800px;
+	height: 210px;
+}
+.informations_enem{
+	width: 800px;
+	height: 850px;
+}
+.informations_uerj{
+	width: 800px;
+	height: 500px;
+}
+.informations_simulados{
+	width: 800px;
+	height: 550px;
+}
+.gluck{
+	width: 200px;
+	margin-left: 300px;
+	border-radius: 10px;
+}
+@media (max-width: 640px){
+	header{
+		width: 326px;
+	}
+	.centralizar, .conteudo{
+		width:326px;
+		margin: 0;
+	}
+	.menu{
+		display:none;
+	}
+	
+    #dps1{
+    	margin-top: 100px !important;
+    }
+    #img-header{
+    	position: relative !important;
+    	left: 50%;
+    	margin-left: -190px;
+    	margin-top: 20px !important;
+    	float: none !important;
+    }
+    .quadrado_dps{
+    	margin: 0 auto !important;
+    	margin-top: 170px !important;
+    }
+    .quadrado{
+    	margin: 0 auto !important;
+    }
+    .retangulo{
+    	display: table !important;
+    	width: 326px !important;
+    	margin-left: 0px !important;
+    }
+	.informations{
+		width: 326px !important;
+		height: 600px;
+	}
+	.informations_n{
+		width: 326px !important;
+		height: 500px;
+	}
+	.informations_simulados{
+		width: 326px !important;
+		height: 600px;
+	}
+	.caixinhas{
+		width: 326px !important;
+		height: 300px;
+		float: left;
+	}
+	
+	.informations_enem{
+		width: 326px !important;
+		height: 1400px;
+	}
+	.informations_uerj{
+		width: 326px !important;
+		height: 980px;
+	}
+	.conteudo{
+		width: 326px !important;
+	}
+	.rodape{
+		height: 55px;
+		text-align: center;	
+		width:326px;
+	}
+	.alternativas{
+		width: 310px !important;
+		margin-left: 5px !important;
+	}
+	.questoes{
+		text-align: justify;	
+		width: 326px !important;
+		height: 2650px !important;
+		font-size: 13.5px;
+	}
+	.questoes_ingles{
+		text-align: justify;	
+		width: 326px !important;
+		height: 3320px !important;
+		font-size: 13.5px;
+	}
+	.questoes_espanhol{
+		text-align: justify;	
+		width: 326px !important;
+		height: 4150px !important;
+		font-size: 13.5px;
+	}
+	.questoes_bio{
+		text-align: justify;	
+		width: 326px !important;
+		height: 2700px !important;
+		font-size: 13.5px;
+	}
+	.questoes_hist{
+		text-align: justify;	
+		width: 326px !important;
+		height: 2850px !important;
+		font-size: 13.5px;
+	}
+	.questoes_port{
+		text-align: justify;	
+		width: 326px !important;
+		height: 3900px !important;
+		font-size: 13.5px;
+	}
+}

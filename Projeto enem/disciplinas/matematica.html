@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Projeto Enem </title>
+		<meta charset="utf-8"/>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/estado.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/modulo.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/temas2.css"/>
+		
+		<script src="../JS/jquery.min.js"></script>
+		<script src="../plugin/correcao.js"></script> 
+		
+		<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css"/>
+		
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+		
+		<link rel="icon" href="../imgs/icon.png" width="50px" />
+		<script>
+			$(document).ready(function(){	
+				$(".questoes").testaResposta();
+				$(".divisao").limpar();
+			});	
+		</script>
+		
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-logo">
+				<img class="logo_header"src="../imgs/logomaybe2.png" alt="logo">
+			</div>
+			<div class="header-buttons">
+				<ul>
+					<li><a href="../login.html" class="botao cuchillada-font ">Entrar</a></li>
+					<li><a href="../cadastrar.html" class="botao cuchillada-font ">Cadastrar</a></li>
+				</ul>
+			</div>
+			<div class="header_search">
+				<form class="searchbox" method="get" action="/search" autocomplete="off" class="header-search">
+					<input name="q" type="text" size="15" placeholder="Digite o que procura" />
+					<input class="button-submit" type="submit" value=" "/>
+				</form>	
+			</div>
+			<div class="dropdown">
+				<span class="cuchillada-font botaomenu">Menu</span>
+					<div class="dropdown-content">
+						<a class="cuchillada-font" href="../inicio.html">Início</a>
+						<a class="cuchillada-font" href="../informacoes.html">Informações</a>
+						<a class="cuchillada-font" href="../simulados.html">Simulados</a>
+						<a class="cuchillada-font" href="../testes.html">Testes vocacionais</a>
+					</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="menu">
+				<nav class="bebas-font">
+					<ul>
+						<li><a href="../inicio.html" class="cuchillada-font options">Início</a></li>
+						<li><a href="../informacoes.html" class="cuchillada-font options">Informações</a></li>
+						<li><a href="../simulados.html" class="cuchillada-font options">Simulados</a></li>
+						<li><a href="../testes.html" class="cuchillada-font options">Testes vocacionais</a></li>	
+					</ul>
+				</nav>
+			</div>
+			<div class="clearfix"></div>
+		</header>
+		<main>	
+			<div class="centralizar conteudo">
+				<section class="questoes_bio">
+					<h3 class="title_info nome_mat central">Matemática</h3>
+					<h4 class="divisao">Questão 1</h4>
+					<p class="titlesm">Com o objetivo de trabalhar a concentração e a sincronia de movimentos dos alunos de uma de suas turmas, um professor de educação física dividiu essa turma em três grupos (A, B e C) e estipulou a seguinte atividade: os alunos do grupo A deveriam bater palmas a cada 2 s, os alunos do grupo B deveriam bater palmas a cada 3 s e os alunos do grupo C deveriam bater palmas a cada 4 s.
+O professor zerou o cronômetro e os três grupos começaram a bater palmas quando ele registrou 1 s. Os movimentos prosseguiram até o cronômetro registrar 60 s.
+Um estagiário anotou no papel a sequência formada pelos instantes em que os três grupos bateram palmas simultaneamente.<br/>
+Qual é o termo geral da sequência anotada?
+</p> 
+
+					<div class="alternativas">
+						<p class="errada">a ) 12 n, com n um número natural, tal que 1 ≤ n ≤ 5</p>
+
+
+						<p class="errada">b ) 24 n, com n um número natural, tal que 1 ≤ n ≤ 2</p>
+
+
+						<p class="errada">c ) 12 (n - 1 ), com n um número natural, tal que 1 ≤ n ≤ 6 . </p>
+
+
+						<p class="certa">d ) 12 (n - 1 ) + 1 , com n um número natural, tal que 1 ≤ n ≤ 5.</p>
+
+
+						<p class="errada">e ) 24 (n - 1 ) + 1 , com n um número natural, tal que 1 ≤ n ≤ 3.</p> 
+					</div><br/>
+					<h4 class="divisao">Questão 2</h4>
+					<p class="titlesm">	O Brasil é o quarto produtor mundial de alimentos e é também um dos campeões mundiais de desperdício. São produzidas por ano, aproximadamente, 150 milhões de toneladas de alimentos e, desse total, 2/3 são produtos de plantio. Em relação ao que se planta, 64% são perdidos ao longo da cadeia produtiva (20% perdidos na colheita, 8% no transporte e armazenamento, 15% na indústria de processamento, 1% no varejo e o restante no processamento culinário e hábitos alimentares).<br/>
+						Disponível em: www.bancodealimentos.org.br. Acesso em: 1 ago. 2012.<br/>
+						O desperdício durante o processamento culinário e hábitos alimentares, em milhão de tonelada, é igual a
+					</p> 
+
+					<div class="alternativas">
+						<p class="certa">a ) 20.</p>
+
+
+						<p class="errada">b ) 30.</p>
+
+
+						<p class="errada">c ) 56.</p>
+
+
+						<p class="certa">d ) 64.</p>
+
+
+						<p class="errada">e ) 96.</p> 
+					</div><br/>
+					<h4 class="divisao">Questão 3</h4>
+					<p class="titlesm">Uma caixa contém uma cédula de R$ 5,00, uma de R$ 20,00 e duas de R$ 50,00 de modelos diferentes. 
+					Retira-se aleatoriamente uma cédula dessa caixa, anota-se o seu valor e devolve-se a cédula à caixa. Em seguida, 
+					repete-se o procedimento anterior.<br/>
+						A probabilidade de que a soma dos valores anotados seja pelo menos igual a R$ 55,00 é 
+					</p> 
+
+					<div class="alternativas">
+						<p class="errada">a ) 1/2</p>
+
+
+						<p class="errada">b )1/4</p>
+
+
+						<p class="certa">c ) 3/4</p>
+
+
+						<p class="errada">d ) 2/9</p>
+
+
+						<p class="errada">e ) 5/9</p> 
+					</div><br/>
+					<h4 class="divisao">Questão 4</h4>
+					<p class="titlesm">Um casal, ambos com 30 anos de idade, pretende fazer um plano de previdência privada. A seguradora 
+						pesquisada, para definir o valor do recolhimento mensal, estima a probabilidade de que pelo menos um deles esteja vivo
+						daqui a 50 anos, tomando por base dados da população, que indicam que 20% dos homens e 30% das mulheres de hoje 
+						alcançarão a idade de 80 anos.<br/>
+						Qual é essa probabilidade?
+					</p> 
+
+					<div class="alternativas">
+						<p class="errada">a ) 50%</p>
+
+
+						<p class="certa">b ) 44%</p>
+
+
+						<p class="errada">c ) 38%</p>
+
+
+						<p class="errada">d ) 25%</p>
+
+
+						<p class="errada">e ) 6% </p> 
+					</div><br/>
+					<h4 class="divisao">Questão 5</h4>
+					<p class="titlesm">Um vendedor de assinaturas de TV a cabo teve, nos 7 primeiros meses do ano, uma média mensal de 84 
+						assinaturas vendidas. Devido a uma reestruturação da empresa, foi exigido que todos os vendedores tivessem, ao final do 
+						ano, uma média mensal de 99 assinaturas vendidas. Diante disso, o vendedor se viu forçado a aumentar sua média mensal de
+						vendas nos 5 meses restantes do ano.<br/>
+						Qual deverá ser a média mensal de vendas do vendedor, nos próximos 5 meses, para que ele possa cumprir a exigência da sua empresa?
+					</p> 
+
+					<div class="alternativas">
+						<p class="errada">a ) 91</p>
+
+
+						<p class="errada">b ) 105</p>
+
+
+						<p class="errada">c ) 114</p>
+
+
+						<p class="errada">d ) 118</p>
+
+
+						<p class="certa">e ) 120 </p> 
+					</div>
+					<br/>
+					<button class="limpar">Limpar</button>
+				</section>
+				
+			</div>
+		</main>
+		<footer class="rodape">
+			<div class="autoria">
+				<h4><em class="cuchillada-font white"> © Created by Ana Clara Faria e Gabriele Jandres</em></h4>
+			</div>
+				<div class="rede-social">
+					<a href="http://facebook.com/juntosprojetoenem"><img class="redes" src="../imgs/face.png" alt="IMG"></a>
+					<a href="http://twitter.com/ProjetoEnem"><img class="redes" src="../imgs/tt.png" alt="IMG"></a>
+					<a href="http://instagram.com/ProjetoEnem"><img class="redes" src="../imgs/insta.png" alt="IMG"></a>
+				</div>
+		</footer>
+	</body>
+</html>

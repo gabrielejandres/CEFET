@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Projeto Enem </title>
+		<meta charset="utf-8"/>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/estado.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/modulo.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/temas2.css"/>
+		
+		<script src="../JS/jquery.min.js"></script>
+		<script src="../plugin/correcao.js"></script> 
+		
+		<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css"/>
+		
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+		
+		<link rel="icon" href="../imgs/icon.png" width="50px" />
+		<script>
+			$(document).ready(function(){	
+				$(".questoes").testaResposta();
+				$(".divisao").limpar();
+			});	
+		</script>
+		
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-logo">
+				<img class="logo_header"src="../imgs/logomaybe2.png" alt="logo">
+			</div>
+			<div class="header-buttons">
+				<ul>
+					<li><a href="../login.html" class="botao cuchillada-font ">Entrar</a></li>
+					<li><a href="../cadastrar.html" class="botao cuchillada-font ">Cadastrar</a></li>
+				</ul>
+			</div>
+			<div class="header_search">
+				<form class="searchbox" method="get" action="/search" autocomplete="off" class="header-search">
+					<input name="q" type="text" size="15" placeholder="Digite o que procura" />
+					<input class="button-submit" type="submit" value=" "/>
+				</form>	
+			</div>
+			<div class="dropdown">
+				<span class="cuchillada-font botaomenu">Menu</span>
+					<div class="dropdown-content">
+						<a class="cuchillada-font" href="../inicio.html">Início</a>
+						<a class="cuchillada-font" href="../informacoes.html">Informações</a>
+						<a class="cuchillada-font" href="../simulados.html">Simulados</a>
+						<a class="cuchillada-font" href="../testes.html">Testes vocacionais</a>
+					</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="menu">
+				<nav class="bebas-font">
+					<ul>
+						<li><a href="../inicio.html" class="cuchillada-font options">Início</a></li>
+						<li><a href="../informacoes.html" class="cuchillada-font options">Informações</a></li>
+						<li><a href="../simulados.html" class="cuchillada-font options">Simulados</a></li>
+						<li><a href="../testes.html" class="cuchillada-font options">Testes vocacionais</a></li>	
+					</ul>
+				</nav>
+			</div>
+			<div class="clearfix"></div>
+		</header>
+		<main>	
+			<div class="centralizar conteudo">
+				<section class="questoes_hist">
+					<h3 class="title_info nome_mat central">História</h3>
+					<h4 class="divisao">Questão 1</h4>
+					<p class="titlesm">O período pré-histórico é o mais longo da vida dos seres humanos na Terra. Na realidade, sabe-se muito
+						pouco sobre os nossos antepassados, e as descobertas recentes põem diariamente em xeque as teorias que explicam sua 
+						existência e modo de vida. Entretanto, a expressão pré-história continua vigente, tendo como referência as sociedades 
+						humanas que:
+					</p> 
+
+					<div class="alternativas">
+						<p class="certa">a ) desconheciam a escrita.</p>
+
+
+						<p class="errada">b ) viviam em cavernas.</p>
+
+
+						<p class="errada">c ) eram socialmente desorganizadas. </p>
+
+
+						<p class="errada">d ) desprezavam a vida civilizada.</p>
+
+					</div><br/>
+					<h4 class="divisao">Questão 2</h4>
+					<p class="titlesm">	É correto afirmar que a Revolução Industrial</p> 
+
+					<div class="alternativas">
+						<p class="errada">a ) alterou, ao mesmo tempo, o processo de trabalho nas áreas coloniais e as condições sociais do artesão na Inglaterra ao reunir capitais e ferramentas em oficinas ou domicílios rurais dispersos./p>
+
+
+						<p class="certa">b )representou ao mesmo tempo, revolução técnica ou tecnológica das formas de produção e revolução das condições de trabalho e retorno de capital, com a exploração desumana da mão de obra. </p>
+
+
+						<p class="errada">c ) favoreceu a ascensão política das colônias ao promover o desenvolvimento econômico nas área periféricas, a organização do mercado de trabalho e o aumento dos núcleo domésticos de produção. </p>
+
+
+						<p class="errada">d ) desestruturou, ao mesmo tempo, o antigo sistema colonial e as formas de produção capitalista europeia, assim como, possibilitou a formação da sociedade moderna, livre do controle das máquinas.  </p>
+
+
+						<p class="errada">e ) tornou a vida do homem, na sociedade colonial, uma constante busca pela apropriação social das inovações tecnológicas originadas do pensamento inglês de progresso e desenvolvimento. </p> 
+					</div><br/>
+					<h4 class="divisao">Questão 3</h4>
+					<p class="titlesm">Leia os fragmentos a seguir.
+						“Em 1807 o Parlamento Britânico, após longo e acrimonioso debate, proscreveu a participação de súditos britânicos
+						no tráfico internacional, e quase ao mesmo tempo iniciou uma campanha, tanto diplomática quanto naval, no sentido de
+						forçar outros países europeus e americanos a juntarem-se nessa decisão importante".<br/><br/>
+
+						“Portugal, por outro lado, com suas colônias africanas e brasileira, e seu vasto tráfico atlântico, estava
+						despreparado para aderir ao novo humanitarismo, e, aos anos que se seguiram a 1807, censurou as pretensões britânicas
+						sempre que pôde [...]".<br/>
+
+						CONRAD, Robert Edgar. Tumbeiros: o tráfico de escravos para o Brasil.<br/><br/>
+
+						Com relação aos fatos históricos apresentados nos fragmentos, é correto afirmar que:
+
+
+					</p> 
+
+					<div class="alternativas">
+						<p class="errada">a ) destacam a participação das colônias americanas nos parlamentos europeus.</p>
+
+
+						<p class="errada">b ) dizem respeito, especificamente, à questão do tráfico de escravos para as colônias inglesas na América.</p>
+
+
+						<p class="errada">c ) demonstram claramente a preocupação do Parlamento Inglês, com a integridade física dos africanos.</p>
+
+
+						<p class="certa">d ) referem-se ao período que o tráfico de escravos da África foi declarado ilegal.</p>
+
+
+						<p class="errada">e ) colocam em discussão as animosidades entre Portugal e a Inglaterra no século XVII.</p> 
+					</div><br/>
+					<h4 class="divisao">Questão 4</h4>
+					<p class="titlesm">No ano de 1939, em meio à atmosfera de tensão política que desencadeou a sucessão de conflitos da 
+					Segunda Guerra Mundial, um acordo de não agressão foi firmado entre a Alemanha e a União Soviética, o Pacto 
+					Germano-Soviético. Esse pacto estabelecia que, se acaso a Alemanha entrasse em conflito com a Inglaterra ou a França em
+					razão de uma eventual investida da Alemanha contra a Polônia, a URSS, por sua vez, ficaria afastada, sem se manifestar
+					militarmente. Tal pacto também pode ser chamado de:
+					</p> 
+
+					<div class="alternativas">
+						<p class="errada">a ) Tratado de Moscou</p>
+
+
+						<p class="errada">b ) Tratado de Versalhes</p>
+
+
+						<p class="errada">c ) Pacto de Varsóvia</p>
+
+
+						<p class="certa">d ) Pacto Ribbentrop-Molotov</p>
+
+					</div><br/>
+					<h4 class="divisao">Questão 5</h4>
+					<p class="titlesm">A década de 60 e 70 do século XX foram marcadas inicialmente pela coexistência pacífica e
+					posteriormente pelo trabalho de detente (distensão levados a efeito pelos entendimentos parciais feitos pelos governantes
+					dos EUA e URSS). Essa aproximação teve, entre outras, a seguinte motivação:
+					</p> 
+
+					<div class="alternativas">
+						<p class="errada">a ) O resultado da Guerra do Vietnã, que tornou evidente a superioridade bélica e econômica dos EUA em relação aos soviéticos.</p>
+
+
+						<p class="errada">b ) A adoção, pelo bloco socialista, nos anos de 1960, da orientação chinesa ou Maoísta, que ameaçava a hegemonia norte‐americana.</p>
+
+
+						<p class="certa">c ) A crise dos mísseis em Cuba, momento agudo da Guerra Fria, que poderia ter desencadeado um conflito de proporções incalculáveis. </p> 
+
+
+						<p class="errada">d ) A criação do Pacto de Varsóvia e do Plano Marshall, pela URSS e EUA respectivamente, e que potencializaram as possibilidades de eclosão de um conflito armado.</p>
+
+					</div>
+					<br/>
+					<button class="limpar">Limpar</button>
+				</section>
+				
+			</div>
+		</main>
+		<footer class="rodape">
+			<div class="autoria">
+				<h4><em class="cuchillada-font white"> © Created by Ana Clara Faria e Gabriele Jandres</em></h4>
+			</div>
+				<div class="rede-social">
+					<a href="http://facebook.com/juntosprojetoenem"><img class="redes" src="../imgs/face.png" alt="IMG"></a>
+					<a href="http://twitter.com/ProjetoEnem"><img class="redes" src="../imgs/tt.png" alt="IMG"></a>
+					<a href="http://instagram.com/ProjetoEnem"><img class="redes" src="../imgs/insta.png" alt="IMG"></a>
+				</div>
+		</footer>
+	</body>
+</html>

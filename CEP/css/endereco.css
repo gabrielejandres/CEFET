@@ -1,0 +1,52 @@
+body{
+		background: url('../img/fundo.jpg');
+		background-repeat:	no-repeat;
+		background-size: 100% 100%;
+		background-attachment: fixed;
+		background: blur(5px);
+}
+form{
+	width: 700px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 50px;
+	padding: 20px;
+	color: #fff;
+	background-color: rgba(0,0,0,0.2);
+	border-radius:25px;
+}
+form:hover{
+	background-color: rgba(0,0,0,0.4);
+}
+.btn{
+	border-radius:25px;
+	width: 200px;
+	padding: 5px;
+	background:rgba(0,0,0,0.6);
+	color:rgba(255,255,255,0.8);
+	border:rgba(255,255,255,0.8) solid 1.5px;
+	margin-top: 20px;
+	text-decoration: none;
+	font-family: 'Pacifico', cursive;
+}
+.btn:hover{
+	opacity: 1;
+	color: #fff;
+	transform: scale(1.2);
+}
+.title{
+	color: #fff;
+	font-size: 2em;
+	font-family: 'Pacifico', cursive;
+}
+input{
+	background-color: rgba(0,0,0,0.6);
+	color: #fff;
+	width: 250px;
+	font-family: 'Josefin Sans', sans-serif;
+	border-radius:10px;
+}
+label{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.3em;
+}

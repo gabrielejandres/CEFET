@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Projeto Enem </title>
+		<meta charset="utf-8"/>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/estado.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/modulo.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/temas2.css"/>
+		
+		<script src="../JS/jquery.min.js"></script>
+		<script src="../plugin/correcao.js"></script> 
+		
+		<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css"/>
+		
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+		
+		<link rel="icon" href="../imgs/icon.png" width="50px" />
+		<script>
+			$(document).ready(function(){	
+				$(".questoes").testaResposta();
+				$(".divisao").limpar();
+			});	
+		</script>
+		
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-logo">
+				<img class="logo_header"src="../imgs/logomaybe2.png" alt="logo">
+			</div>
+			<div class="header-buttons">
+				<ul>
+					<li><a href="../login.html" class="botao cuchillada-font ">Entrar</a></li>
+					<li><a href="../cadastrar.html" class="botao cuchillada-font ">Cadastrar</a></li>
+				</ul>
+			</div>
+			<div class="header_search">
+				<form class="searchbox" method="get" action="/search" autocomplete="off" class="header-search">
+					<input name="q" type="text" size="15" placeholder="Digite o que procura" />
+					<input class="button-submit" type="submit" value=" "/>
+				</form>	
+			</div>
+			<div class="dropdown">
+				<span class="cuchillada-font botaomenu">Menu</span>
+					<div class="dropdown-content">
+						<a class="cuchillada-font" href="../inicio.html">Início</a>
+						<a class="cuchillada-font" href="../informacoes.html">Informações</a>
+						<a class="cuchillada-font" href="../simulados.html">Simulados</a>
+						<a class="cuchillada-font" href="../testes.html">Testes vocacionais</a>
+					</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="menu">
+				<nav class="bebas-font">
+					<ul>
+						<li><a href="../inicio.html" class="cuchillada-font options">Início</a></li>
+						<li><a href="../informacoes.html" class="cuchillada-font options">Informações</a></li>
+						<li><a href="../simulados.html" class="cuchillada-font options">Simulados</a></li>
+						<li><a href="../testes.html" class="cuchillada-font options">Testes vocacionais</a></li>	
+					</ul>
+				</nav>
+			</div>
+			<div class="clearfix"></div>
+		</header>
+		<main>	
+			<div class="centralizar conteudo">
+				<section class="questoes_port">
+					<h3 class="title_info nome_mat central">Português</h3>
+					<h4 class="divisao">Questão 1</h4>
+					<p class="titlesm">Ler não é decifrar, como num jogo de adivinhações, o sentido de um texto. É, a partir do texto, ser 
+					capaz de atribuir-lhe significado, conseguir relacioná-lo a todos os outros textos significativos para cada um, 
+					reconhecer nele o tipo de leitura que o seu autor pretendia e, dono da própria vontade, entregar-se a essa leitura, ou
+					rebelar-se contra ela, propondo uma outra não prevista.<br/>
+					LAJOLO, M. Do mundo da leitura para a leitura do mundo. São Paulo: Ática, 1993.<br/><br/>
+					Nesse texto, a autora apresenta reflexões sobre o processo de produção de sentidos, valendo-se da metalinguagem. Essa função da linguagem torna-se evidente pelo fato de o texto 
+					</p> 
+
+					<div class="alternativas">
+						<p class="errada">a ) ressaltar a importância da intertextualidade.</p>
+
+						<p class="errada">b ) propor leituras diferentes das previsíveis.</p>
+
+						<p class="errada">c ) apresentar o ponto de vista da autora.</p>
+
+						<p class="certa">d ) discorrer sobre o ato de leitura.</p>
+						
+						<p class="errada">e ) focar a participação do leitor.</p>
+
+					</div><br/>
+					<h4 class="divisao">Questão 2</h4>
+					<p class="titlesm">O exercício da crônica
+						Escrever prosa é uma arte ingrata. Eu digo prosa fiada, como faz um cronista; não a prosa de um ficcionista, na qual
+						este é levado meio a tapas pelas personagens e situações que, azar dele, criou porque quis. Com um prosador do 
+						cotidiano, a coisa fia mais fino. Senta-se ele diante de sua máquina, olha através da janela e busca fundo em sua 
+						imaginação um fato qualquer, de preferência colhido no noticiário matutino, ou da véspera, em que, com as suas 
+						artimanhas peculiares, possa injetar um sangue novo. Se nada houver, resta-lhe o recurso de olhar em torno e esperar
+						que, através de um processo associativo, surja-lhe de repente a crônica, provinda dos fatos e feitos de sua vida
+						emocionalmente despertados pela concentração. Ou então, em última instância, recorrer ao assunto da falta de assunto,
+						já bastante gasto, mas do qual, no ato de escrever, pode surgir o inesperado.<br/>
+						MORAES, V. Para viver um grande amor: crônicas e poemas. São Paulo: Cia. das Letras, 1991.<br/><br/>
+
+						Predomina nesse texto a função da linguagem que se constitui
+</p> 
+
+					<div class="alternativas">
+						<p class="errada">a ) nas diferenças entre o cronista e o ficcionista.</p>
+
+
+						<p class="errada">b ) nos elementos que servem de inspiração ao cronista. </p>
+
+
+						<p class="errada">c ) nos assuntos que podem ser tratados em uma crônica. </p>
+
+
+						<p class="errada">d ) no papel da vida do cronista no processo de escrita da crônica. </p>
+
+						<p class="certa">e ) nas dificuldades de se escrever uma crônica por meio de uma crônica.</p> 
+					</div><br/>
+					<h4 class="divisao">Questão 3</h4>
+					<p class="titlesm">Esaú e Jacó<br/>
+							Ora, aí está justamente a epígrafe do livro, se eu lhe quisesse pôr alguma, e não me ocorresse outra. Não é somente um meio de completar as pessoas da narração com as ideias que deixarem, mas ainda um par de lunetas para que o leitor do livro penetre o que for menos claro ou totalmente escuro.
+							Por outro lado, há proveito em irem as pessoas da minha história colaborando nela, ajudando o autor, por uma lei de solidariedade, espécie de troca de serviços, entre o enxadrista e os seus trebelhos.
+							Se aceitas a comparação, distinguirás o rei e a dama, o bispo e o cavalo, sem que o cavalo possa fazer de torre,
+							nem a torre de peão. Há ainda a diferença da cor, branca e preta, mas esta não tira o poder da marcha de cada
+							peça, e afinal umas e outras podem ganhar a partida, e assim vai o mundo.<br/>
+						ASSIS, M. Obra completa. Rio de Janeiro: Nova Aguilar, 1964 (fragmento). <br/><br/>
+						O fragmento do romance Esaú e Jacó mostra como o narrador concebe a leitura de um texto literário. Com base nesse trecho, tal leitura deve levar em conta
+					</p> 
+
+					<div class="alternativas">
+						<p class="certa">a ) o leitor como peça fundamental na construção dos sentidos.</p>
+
+
+						<p class="errada">b ) a luneta como objeto que permite ler melhor.</p>
+
+
+						<p class="errada">c ) o autor como único criador de significados.</p>
+
+
+						<p class="errada">d ) o caráter de entretenimento da literatura.</p>
+
+
+						<p class="errada">e ) a solidariedade de outros autores.</p> 
+					</div><br/>
+					<h4 class="divisao">Questão 4</h4>
+					<p class="titlesm">O hoax, como é chamado qualquer boato ou farsa I na internet, pode espalhar vírus entre os seus contatos. Falsos sorteios de celulares ou frases que Clarice Lispector nunca disse são exemplos de hoax. Trata-se de boatos recebidos por e-mail ou compartilhados em redes sociais. Em geral, são mensagens dramáticas ou alarmantes que acompanham imagens chocantes, falam de crianças doentes ou avisam sobre falsos vírus. O objetivo de quem cria esse tipo de mensagem pode ser apenas se divertir com a brincadeira (de mau gosto), prejudicar a imagem de uma empresa ou espalhar uma ideologia política.
+						Se o hoax for do tipo phishing (derivado de fishing, pescaria, em inglês) o problema pode ser mais grave: o usuário
+						que clicar pode ter seus dados pessoais ou bancários roubados por golpistas. Por isso é tão importante ficar atento.<br/>
+					VIMERCATE, N. Disponível em: www.techtudo.com.br. Acesso em: 1 maio 2013<br/><br/>
+					Ao discorrer sobre os hoaxes, o texto sugere ao leitor, como estratégia para evitar essa ameaça,
+					</p> 
+
+					<div class="alternativas">
+						<p class="errada">a ) recusar convites de jogos e brincadeiras feitos pela internet.</p>
+
+
+						<p class="certa">b ) analisar a linguagem utilizada nas mensagens recebidas.</p>
+
+
+						<p class="errada">c ) classificar os contatos presentes em suas redes sociais.</p>
+
+
+						<p class="errada">d ) utilizar programas que identifiquem falsos vírus.</p>
+						
+						<p class="errada">e ) desprezar mensagens que causem comoção.</p> 
+
+					</div><br/>
+					<h4 class="divisao">Questão 5</h4>
+					<p class="titlesm">Até que ponto replicar conteúdo é crime? “A internet e a pirataria são inseparáveis”, diz o diretor do
+					instituto de pesquisas americano Social Science Research Council. “Há uma infraestrutura pequena para controlar quem é o
+					dono dos arquivos que circulam na rede. Isso acabou com o controle sobre a propriedade e tem sido descrito como pirataria,
+					mas é inerente à tecnologia”, afirma o diretor. O ato de distribuir cópias de um trabalho sem a autorização dos seus
+					produtores pode, sim, ser considerado crime, mas nem sempre essa distribuição gratuita lesa os donos dos direitos 
+					autorais. Pelo contrário. Veja o caso do livro O alquimista, do escritor Paulo Coelho. Após publicar, para download
+					gratuito, uma versão traduzida da obra em seu blog, Coelho viu as vendas do livro em papel explodirem.<br/>
+						BARRETO, J.; MORAES, M. A internet existe sem pirataria? Veja, n. 2 308, 13 fev. 2013 (adaptado).<br/><br/>
+						De acordo com o texto, o impacto causado pela internet propicia a
+					</p> 
+
+					<div class="alternativas">
+						<p class="errada">a ) banalização da pirataria na rede.</p>
+
+						<p class="errada">b ) adoção de medidas favoráveis aos editores.</p>
+
+						<p class="errada">c ) implementação de leis contra crimes eletrônicos.</p> 
+
+						<p class="certa">d ) reavaliação do conceito de propriedade intelectual.</p>
+						
+						<p class="errada">d ) reavaliação do conceito de propriedade intelectual.</p>
+
+					</div>
+					<br/>
+					<button class="limpar">Limpar</button>
+				</section>
+				
+			</div>
+		</main>
+		<footer class="rodape">
+			<div class="autoria">
+				<h4><em class="cuchillada-font white"> © Created by Ana Clara Faria e Gabriele Jandres</em></h4>
+			</div>
+				<div class="rede-social">
+					<a href="http://facebook.com/juntosprojetoenem"><img class="redes" src="../imgs/face.png" alt="IMG"></a>
+					<a href="http://twitter.com/ProjetoEnem"><img class="redes" src="../imgs/tt.png" alt="IMG"></a>
+					<a href="http://instagram.com/ProjetoEnem"><img class="redes" src="../imgs/insta.png" alt="IMG"></a>
+				</div>
+		</footer>
+	</body>
+</html>

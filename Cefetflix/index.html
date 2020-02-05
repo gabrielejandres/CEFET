@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+	<head>
+		<title>CefetFlix </title>
+		<meta charset="utf-8"/>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css"/>
+		
+		<link rel="icon" href="./img/icon.png" width="50px"  />
+		
+		<link rel="stylesheet" type="text/css" href="./css/filmes.css"/>
+		
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+		
+		<script src="./JS/filmes.js"></script>
+		
+		<script src="./JS/jquery.min.js"></script>
+		
+	<script>
+		$(function(){
+			console.log(filmes);
+			$.each(filmes, function (indice, filme){
+			
+				var $divSemelhantes = $("<div/>")
+					.addClass("semelhantes");
+					
+				var $cont;
+				var $i=0;
+				$.each(filme.titulosSemelhantes, function(i, semelhanteId ){
+					$.each(filmes, function(i, obj){
+						if(semelhanteId==obj.id){
+							$i++;
+							$divSemelhantes
+								.append($("<li/>")
+									.addClass("lista")
+									.text(this.titulo)	
+								)
+								.prepend($("<img / >")
+									.attr("src", this.figura))
+						$cont=1;
+						}
+					})
+				});
+				if($i==1){
+					$divSemelhantes.addClass("um")
+				}
+				else{
+					if($i==2){
+						$divSemelhantes.addClass("dois")
+					}
+					else{
+						$divSemelhantes.addClass("tres")
+					}
+					
+				}
+				if($cont!=1){
+					$divSemelhantes
+						.addClass("semsem")
+								.append($("<p / >")
+									.text("Não há semelhantes. Sugestões? Entre em contato conosco!")
+								)
+								.append($("<img / >")
+									.attr("src", "./img/contact.png"))
+				}
+				
+				var $divOpinioes = $("<div/>")
+					.addClass("opinioes");
+				
+				$.each(filme.opinioes, function(i, obj){
+					$divOpinioes
+						.text( " Comentário: " +obj.descricao)
+						if(obj.rating==1){
+							$divOpinioes.append($("<img / >")
+									.addClass("star")
+									.attr("src", "./img/1-estrela.png"))
+						}
+						else{
+							if(obj.rating==2){
+							$divOpinioes.append($("<img / >")
+									.addClass("star")
+									.attr("src", "./img/2-estrelas.png"))
+							}
+							else{
+								if(obj.rating==3){
+								$divOpinioes.append($("<img / >")
+										.addClass("star")
+										.attr("src", "./img/3-estrelas.png"))
+								}
+								else{
+									if(obj.rating==4){
+									$divOpinioes.append($("<img / >")
+											.addClass("star")
+											.attr("src", "./img/4-estrelas.png"))
+									}
+									else{
+										$divOpinioes.append($("<img / >")
+											.addClass("star")
+											.attr("src", "./img/5-estrelas.png"))
+									
+									}
+								}
+							}	
+						}
+				});
+				
+				$(".filmes")
+					.append($("<div / >")
+						.addClass("filme")
+							.append($("<div / >")
+								.addClass("dir")
+								.append($("<h1 / >")
+									.text(filme.titulo)
+								)
+								.append($("<img / >")
+									.attr("src", filme.figura)
+								)
+							)
+						.append($("<div / >")
+							.addClass("elenco")
+								.append($("<p / >")
+									.text("Elenco:")
+							)
+								.append($("<p / >")
+									.text(filme.elenco)
+								)
+						)
+						
+						.append($("<div / >")
+							.addClass("genero")
+								.append($("<p / >")
+									.text("Gêneros:")
+								)
+								.append($("<p / >")
+									.text(filme.generos)
+								)
+									
+						)
+						.append($("<div / >")
+							.addClass("classificacao")
+								.append($("<p / >")
+									.text("Classificação:")
+								)
+								.append($("<p / >")
+									.text("$clas")
+									.text(filme.classificacao)
+								)
+						)
+					
+						.append($("<div / >")
+							.addClass("resumo")
+								.append($("<p / >")
+									.text(filme.resumo)
+								)
+						)
+						
+						.append($("<p / >")
+							.addClass("title")
+							.text("Semelhantes:")
+						)
+						.append($divSemelhantes)
+						
+						.append($("<p / >")
+							.addClass("title")
+							.text("Opiniões:")
+						)
+						.append($divOpinioes)
+						
+						.append($("<img / >")
+							.addClass("linha")
+							.attr("src", "./img/linha.png")
+						)
+					)						
+			});
+		});
+	</script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-logo">
+				<img class="logo" src="./img/logo.png" alt="logo">
+			</div>
+			<div class="clearfix"></div>
+			<div class="menu">
+				<nav>
+					<ul>
+						<li><a href="inicio.html" >Início</a></li>
+						<li><a href="index.html">Filmes e séries</a></li>
+						<li><a href="#">Minha lista</a></li>
+						<li><a href="#">Informações</a></li>	
+					</ul>
+				</nav>
+			</div>
+			<div class="clearfix"></div>
+		<div class="filmes">
+		</div>
+	</body>
+</html>

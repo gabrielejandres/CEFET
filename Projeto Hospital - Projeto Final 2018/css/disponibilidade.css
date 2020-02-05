@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body{
+	background: url(https://wallpapercave.com/wp/wp1848587.jpg)no-repeat;
+	background-size: 100%;
+}
+legend{
+	font-family: 'Amatic SC', cursive;
+	font-size: 280%; 
+	color: white;
+	text-decoration: bold;
+	text-shadow: 3px 5px 4px black;
+}
+.submit{
+	margin: 10px;
+	font-size: 1.2em;
+	background: transparent;
+	border-radius: 10px;
+	padding: 2px;
+	width: 200px;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+}
+
+.inputs{
+	width: 50%;
+	text-align: center;
+	border-radius: 10px;	
+}
+
+legend{
+	margin-bottom: 10px;
+	font-family: 'Amatic SC', cursive;
+	font-size: 6.2em; 
+	color: white;
+	text-shadow: 3px 5px 4px black;
+		
+}
+
+label{
+	font-size: 1.2em;
+}
+
+option{
+	text-align: center;
+}
+.menu{
+	text-align: center;
+	margin: 12% auto;
+	width: 50%;
+	border-radius: 10px;
+	background-color: rgba(6,6,6,0.4);
+	padding: 40px;
+	padding-top: 10px;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html{
+	
+	background: url(https://www.deco.proteste.pt/-/media/edideco/images/home/saude/hospitais-servicos/news/2018/exames%20medicos%20sms/thumb-exames-medicos-sms.jpg?la=pt-pt&rev=fde813be-8a9a-4981-9ea1-60af29870d70) no-repeat;
+	background-size: cover;
+
+}
+.corpo{
+	background: transparent;
+}
+
+.titulo{
+	font-size: 900%; 
+	font-family: 'Amatic SC', cursive;
+	color: white;
+	text-decoration: bold;
+	text-shadow: 3px 5px 4px black;
+}
+
+.index{
+	width: 50%;
+	margin: 10% 0% 16% auto;
+	text-align: center;
+}
+
+.agendar{
+	margin: 10px;
+	font-size: 1.5em;
+	background: transparent;
+	border-radius: 10px;
+	padding: 2px;
+	width: 200px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.agendar a{
+	color: white;
+	text-decoration: none;
+	text-shadow: 3px 1px 1px black;
+}
+
+a:hover{
+	color: white;
+	text-decoration: none;
+}
+
+.cadastro{
+	text-align: left;
+	font-size: 1.2em;
+	margin: 10px;
+	text-align: left;
+	color: white;
+	text-shadow: 1px 1px 1px black;
+	font-family: 'Montserrat', sans-serif;
+}

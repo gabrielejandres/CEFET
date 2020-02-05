@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Projeto Enem </title>
+		<meta charset="utf-8"/>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/estado.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/modulo.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/temas2.css"/>
+		
+		<script src="../JS/jquery.min.js"></script>
+		<script src="../plugin/correcao.js"></script> 
+		
+		<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css"/>
+		
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+		
+		<link rel="icon" href="../imgs/icon.png" width="50px" />
+		<script>
+			$(document).ready(function(){	
+				$(".questoes").testaResposta();
+				$(".divisao").limpar();
+			});	
+		</script>
+		
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-logo">
+				<img class="logo_header"src="../imgs/logomaybe2.png" alt="logo">
+			</div>
+			<div class="header-buttons">
+				<ul>
+					<li><a href="../login.html" class="botao cuchillada-font ">Entrar</a></li>
+					<li><a href="../cadastrar.html" class="botao cuchillada-font ">Cadastrar</a></li>
+				</ul>
+			</div>
+			<div class="header_search">
+				<form class="searchbox" method="get" action="/search" autocomplete="off" class="header-search">
+					<input name="q" type="text" size="15" placeholder="Digite o que procura" />
+					<input class="button-submit" type="submit" value=" "/>
+				</form>	
+			</div>
+			<div class="dropdown">
+				<span class="cuchillada-font botaomenu">Menu</span>
+					<div class="dropdown-content">
+						<a class="cuchillada-font" href="../inicio.html">Início</a>
+						<a class="cuchillada-font" href="../informacoes.html">Informações</a>
+						<a class="cuchillada-font" href="../simulados.html">Simulados</a>
+						<a class="cuchillada-font" href="../testes.html">Testes vocacionais</a>
+					</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="menu">
+				<nav class="bebas-font">
+					<ul>
+						<li><a href="../inicio.html" class="cuchillada-font options">Início</a></li>
+						<li><a href="../informacoes.html" class="cuchillada-font options">Informações</a></li>
+						<li><a href="../simulados.html" class="cuchillada-font options">Simulados</a></li>
+						<li><a href="../testes.html" class="cuchillada-font options">Testes vocacionais</a></li>	
+					</ul>
+				</nav>
+			</div>
+			<div class="clearfix"></div>
+		</header>
+		<main>	
+			<div class="centralizar conteudo">
+				<section class="questoes_bio">
+					<h3 class="title_info nome_mat central">Biologia</h3>
+					<h4 class="divisao">Questão 1</h4>
+					<p class="titlesm"> É correto afirmar que:</p> 
+
+					<div class="alternativas">
+						<p class="errada">a ) a única molécula que participa da produção de proteínas é o DNA.</p>
+
+
+						<p class="errada">b ) o fluxo de informação genética, nos sistemas biológicos, é unidirecional.</p>
+
+
+						<p class="errada">c ) as fontes de informação ativas durante o processo de transcrição são as proteínas.</p>
+
+
+						<p class="certa">d ) é possível obter diferentes variantes proteicas a partir de um mesmo produto de transcrição.</p>
+
+
+						<p class="errada">e ) a molécula de DNA possui forma circular e as demais moléculas possuem forma de fita simples linearizadas.</p> 
+					</div><br/>
+					<h4 class="divisao">Questão 2</h4>
+					<p class="titlesm">Há milhares de anos o homem faz uso da biotecnologia para a produção de alimentos como pães, cervejas e vinhos. Na fabricação de pães, por exemplo, são usados fungos unicelulares, chamados de leveduras, que são comercializados como fermento biológico. Eles são usados para promover o crescimento da massa, deixando-a leve e macia.
+					<br/><br/>O crescimento da massa do pão pelo processo citado é resultante da
+					</p> 
+
+					<div class="alternativas">
+						<p class="certa">a ) liberação de gás carbônico.</p>
+
+
+						<p class="errada">b ) formação de ácido lático. </p>
+
+
+						<p class="errada">c ) formação de água.</p>
+
+
+						<p class="certa">d ) produção de ATP.</p>
+
+
+						<p class="errada">e ) liberação de calor.</p> 
+					</div><br/>
+					<h4 class="divisao">Questão 3</h4>
+					<p class="titlesm">Companheira viajante<br/>
+						Suavemente revelada? Bem no interior de nossas células, uma clandestina e estranha alma existe. Silenciosamente, ela trama e aparece cumprindo seus afazeres domésticos cotidianos, descobrindo seu nicho especial em nossa fogosa cozinha metabólica, mantendo entropia em apuros, em ciclos variáveis noturnos e diurnos. Contudo, raramente ela nos acende, apesar de sua fornalha consumi-la. Sua origem? Microbiana, supomos. Julga-se adaptada às células eucariontes, considerando-se como escrava — uma serva a serviço de nossa verdadeira evolução.<br/>
+						McMURRAY, W. C. The traveler. Trends in Biochemical Sciences, 1994 (adaptado).<br/><br/>
+						A organela celular descrita de forma poética no texto é o(a)
+
+					</p> 
+
+					<div class="alternativas">
+						<p class="errada">a ) centríolo.</p>
+
+
+						<p class="errada">b ) lisossomo.</p>
+
+
+						<p class="certa">c ) mitocôndria.</p>
+
+
+						<p class="errada">d ) complexo golgiense.</p>
+
+
+						<p class="errada">e) retículo endoplasmático liso.</p> 
+					</div><br/>
+					<h4 class="divisao">Questão 4</h4>
+					<p class="titlesm">Todas as reações químicas de um ser vivo seguem um programa operado por uma central de informações. A meta desse programa é a auto-replicação de todos os componentes do sistema, incluindo-se a duplicação do próprio programa ou mais precisamente do material no qual o programa está inscrito. Cada reprodução pode estar associada a pequenas modificações do programa. <br/>
+						M. O. Murphy e l. O’neill (Orgs.). O que é vida? 50 anos depois — especulações sobre o futuro da biologia. São Paulo: UNESP. 1997 (com adaptações).<br/><br/> 
+						São indispensáveis à execução do “programa” mencionado acima processos relacionados a metabolismo, auto- replicação e mutação, que podem ser exemplificados, respectivamente, por: 
+					</p> 
+
+					<div class="alternativas">
+						<p class="errada">a ) fotossíntese, respiração e alterações na seqüência de bases nitrogenadas do código genético.</p>
+
+
+						<p class="errada">b ) duplicação do RNA, pareamento de bases nitrogenadas e digestão de constituintes dos alimentos. </p>
+
+
+						<p class="errada">c ) excreção de compostos nitrogenados, respiração celular e digestão de constituintes dos alimentos.</p>
+
+
+						<p class="certa">d ) respiração celular, duplicação do DNA e alterações na seqüência de bases nitrogenadas do código genético.</p>
+
+
+						<p class="errada">e ) fotossíntese, duplicação do DNA e excreção de compostos nitrogenados. </p> 
+					</div><br/>
+					<h4 class="divisao">Questão 5</h4>
+					<p class="titlesm">Caso os cientistas descobrissem alguma substância que impedisse a reprodução de todos os insetos, 
+					certamente nos livraríamos de várias doenças em que esses animais são vetores. Em compensação teríamos grandes problemas
+					como a diminuição drástica de plantas que dependem dos insetos para polinização, que é o caso das
+					</p> 
+
+					<div class="alternativas">
+						<p class="errada">a ) algas.</p>
+
+
+						<p class="errada">b ) briófitas como os musgos.</p>
+
+
+						<p class="errada">c ) pteridófitas como as samambaias.</p>
+
+
+						<p class="errada">d ) gimnospermas como os pinheiros.</p>
+
+
+						<p class="certa">e ) angiospermas como as árvores frutíferas. </p> 
+					</div>
+					<br/><br/>
+					<button class="limpar">Limpar</button>
+				</section>
+				
+			</div>
+		</main>
+		<footer class="rodape">
+			<div class="autoria">
+				<h4><em class="cuchillada-font white"> © Created by Ana Clara Faria e Gabriele Jandres</em></h4>
+			</div>
+				<div class="rede-social">
+					<a href="http://facebook.com/juntosprojetoenem"><img class="redes" src="../imgs/face.png" alt="IMG"></a>
+					<a href="http://twitter.com/ProjetoEnem"><img class="redes" src="../imgs/tt.png" alt="IMG"></a>
+					<a href="http://instagram.com/ProjetoEnem"><img class="redes" src="../imgs/insta.png" alt="IMG"></a>
+				</div>
+		</footer>
+	</body>
+</html>
